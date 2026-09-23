@@ -51,6 +51,18 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,
 .nav-links a:hover{color:var(--fucsia);}
 .nav-cta{background:var(--fucsia);color:white!important;padding:9px 22px;border-radius:var(--radius-pill);font-size:0.85rem;font-weight:700;text-decoration:none;transition:background 0.2s,transform 0.15s;}
 .nav-cta:hover{background:var(--fucsia-dark);transform:scale(1.03);}
+.nav-dropdown{position:relative;}
+.nav-dropdown-toggle{background:none;border:none;font-family:inherit;font-size:0.85rem;font-weight:600;color:var(--black);cursor:pointer;display:flex;align-items:center;gap:6px;padding:0;transition:color 0.2s;}
+.nav-dropdown-toggle:hover,.nav-dropdown.open .nav-dropdown-toggle{color:var(--fucsia);}
+.nav-dropdown-toggle svg{transition:transform 0.2s;}
+.nav-dropdown.open .nav-dropdown-toggle svg{transform:rotate(180deg);}
+.nav-dropdown-menu{position:absolute;top:calc(100% + 14px);left:50%;transform:translateX(-50%);min-width:220px;background:var(--white);border:1px solid var(--border-med);border-radius:var(--radius-md);box-shadow:0 12px 32px rgba(0,0,0,0.08);list-style:none;padding:6px;opacity:0;visibility:hidden;transition:opacity 0.18s,visibility 0.18s;}
+.nav-dropdown-menu::before{content:"";position:absolute;top:-14px;left:0;right:0;height:14px;}
+.nav-dropdown.open .nav-dropdown-menu{opacity:1;visibility:visible;}
+@media(hover:hover){.nav-dropdown:hover .nav-dropdown-menu{opacity:1;visibility:visible;}.nav-dropdown:hover .nav-dropdown-toggle{color:var(--fucsia);}.nav-dropdown:hover .nav-dropdown-toggle svg{transform:rotate(180deg);}}
+.nav-dropdown-menu a{display:block;padding:10px 14px;border-radius:var(--radius-sm);white-space:nowrap;}
+.nav-dropdown-menu a:hover{background:var(--fucsia-light);color:var(--fucsia-dark);}
+.nav-dropdown-toggle:focus-visible,.nav-dropdown-menu a:focus-visible{outline:2px solid var(--fucsia);outline-offset:2px;}
 
 /* TICKER */
 .ticker-wrap{margin-top:64px;background:var(--fucsia);padding:11px 0;overflow:hidden;white-space:nowrap;}
@@ -364,6 +376,15 @@ footer p{font-size:0.8rem;color:var(--gray-light);}
     <li><a href="#servicios">Servicios</a></li>
     <li><a href="#demos">Demos IA</a></li>
     <li><a href="#casos">Casos</a></li>
+    <li class="nav-dropdown">
+      <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+        Cursos
+        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="nav-dropdown-menu">
+        <li><a href="agentes-inmobiliarios.html">Agentes Inmobiliarios</a></li>
+      </ul>
+    </li>
     <li><a href="#contacto" class="nav-cta">Trabajemos juntos</a></li>
   </ul>
 </nav>
@@ -1362,6 +1383,26 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',
   e.preventDefault();const t=document.querySelector(this.getAttribute('href'));
   if(t)t.scrollIntoView({behavior:'smooth',block:'start'});
 }));
+</script>
+<script>
+(function(){
+  document.querySelectorAll('.nav-dropdown').forEach(function(dd){
+    var btn=dd.querySelector('.nav-dropdown-toggle');
+    btn.addEventListener('click',function(e){
+      e.stopPropagation();
+      var open=dd.classList.toggle('open');
+      btn.setAttribute('aria-expanded',open);
+    });
+  });
+  function closeAll(){
+    document.querySelectorAll('.nav-dropdown.open').forEach(function(dd){
+      dd.classList.remove('open');
+      dd.querySelector('.nav-dropdown-toggle').setAttribute('aria-expanded','false');
+    });
+  }
+  document.addEventListener('click',closeAll);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeAll();});
+})();
 </script>
 </body>
 </html>
