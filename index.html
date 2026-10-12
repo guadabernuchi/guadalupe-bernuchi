@@ -17,293 +17,304 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:title" content="Guadalupe Bernuchi — Marketing, IA y buenas causas">
 <meta property="og:description" content="Growth Marketing con datos e IA. Creadora de Mom Growing Story y Growy App.">
 <meta property="og:url" content="https://guadabernuchi.com.ar/">
-<meta name="theme-color" content="#FDF0F5">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23F02D7D'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='32' font-weight='700' font-style='italic' fill='white' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#FDF3E7">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cpath d='M146 100C212.8 122.4 195.6 163.9 132.5 132.5 163.9 195.6 122.4 212.8 100 146 77.6 212.8 36.1 195.6 67.5 132.5 4.4 163.9-12.8 122.4 54 100-12.8 77.6 4.4 36.1 67.5 67.5 36.1 4.4 77.6-12.8 100 54 122.4-12.8 163.9 4.4 132.5 67.5 195.6 36.1 212.8 77.6 146 100Z' fill='%23F0789F'/%3E%3Ccircle cx='100' cy='100' r='34' fill='%23F6C76B'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600;1,9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 :root{
-  /* Manual de marca */
-  --bg:#FDF0F5;
-  --fucsia:#F02D7D;
-  --black:#1A1A1A;
-  --gray:#666666;
-  --yellow:#FFD93D;
-  --blue:#4FACF5;
-  /* Derivados */
-  --fucsia-dark:#C4155F;
-  --fucsia-soft:#FAD3E3;
-  --fucsia-mist:#FBE4EE;
-  --yellow-soft:#FFEFA8;
-  --yellow-mist:#FFF7D6;
-  --blue-soft:#C9E4FB;
-  --blue-mist:#E4F1FD;
-  --paper:#FFFAFC;
-  --line:rgba(26,26,26,0.10);
-  --serif:'Playfair Display',Georgia,serif;
+  /* base cálida */
+  --cream:#FDF3E7;
+  --cream-deep:#F7E8D6;
+  --paper:#FFFBF4;
+  /* acentos suaves */
+  --rose:#F0789F;          /* fucsia de marca, suavizado */
+  --rose-deep:#D9568A;
+  --rose-soft:#F9DCE4;
+  --rose-mist:#FCEDF1;
+  --peach:#F2A97E;
+  --peach-soft:#FADFC9;
+  --terra:#E07A5F;
+  --butter:#F6C76B;
+  --butter-soft:#FBEAC2;
+  --sage:#A8B48A;
+  --sage-soft:#DFE5CE;
+  --sky:#BED2D5;
+  --sky-soft:#E2EDEE;
+  --teal:#5F7E7C;
+  /* tinta */
+  --ink:#4A3B35;
+  --ink-soft:#8C7B72;
+  --line:rgba(74,59,53,0.12);
+  --serif:'Fraunces',Georgia,serif;
   --sans:'Plus Jakarta Sans',system-ui,sans-serif;
-  --r-xl:36px;--r-lg:26px;--r-md:18px;--pill:999px;
+  --r-xl:40px;--r-lg:28px;--r-md:20px;--pill:999px;
 }
 html{scroll-behavior:smooth;}
 html,body{overflow-x:clip;}
-body{font-family:var(--sans);background:var(--bg);color:var(--black);line-height:1.65;-webkit-font-smoothing:antialiased;}
+body{font-family:var(--sans);background:var(--cream);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased;}
 img{max-width:100%;display:block;}
 a{color:inherit;}
-:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:6px;}
-.skip{position:absolute;left:-999px;top:8px;background:var(--black);color:#fff;padding:8px 14px;border-radius:var(--pill);z-index:200;}
-.skip:focus{left:12px;}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px;border-radius:8px;}
+.skip{position:absolute;left:-999px;top:8px;background:var(--teal);color:#fff;padding:10px 16px;border-radius:var(--pill);z-index:200;}
+.skip:focus{left:14px;}
+
+/* textura de cuadrícula dibujada a mano */
+.grid-bg{position:relative;}
+.grid-bg::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.5;
+  background-image:linear-gradient(rgba(190,210,213,.55) 1.4px,transparent 1.4px),linear-gradient(90deg,rgba(190,210,213,.55) 1.4px,transparent 1.4px);
+  background-size:52px 52px;
+  -webkit-mask-image:radial-gradient(ellipse 70% 60% at 50% 40%,#000 25%,transparent 78%);
+  mask-image:radial-gradient(ellipse 70% 60% at 50% 40%,#000 25%,transparent 78%);}
+.grid-bg > *{position:relative;z-index:1;}
 
 /* ===== NAV ===== */
-nav{position:fixed;top:12px;left:12px;right:12px;z-index:100;height:62px;padding:0 10px 0 22px;display:flex;align-items:center;justify-content:space-between;background:rgba(255,250,252,0.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1.5px solid var(--line);border-radius:var(--pill);max-width:1180px;margin:0 auto;}
-.logo{font-family:var(--serif);font-size:1.25rem;font-weight:900;text-decoration:none;letter-spacing:-0.02em;}
-.logo em{color:var(--fucsia);font-style:italic;}
-.nav-links{display:flex;gap:4px;list-style:none;align-items:center;}
-.nav-links a{display:block;font-size:0.86rem;font-weight:600;text-decoration:none;padding:8px 14px;border-radius:var(--pill);transition:background .2s,color .2s;}
-.nav-links a:hover{background:var(--fucsia-mist);color:var(--fucsia-dark);}
-.nav-links .nav-growy{background:var(--yellow-soft);}
-.nav-links .nav-growy:hover{background:var(--yellow);color:var(--black);}
-.nav-links .nav-cta{background:var(--fucsia);color:#fff;font-weight:700;padding:10px 20px;}
-.nav-links .nav-cta:hover{background:var(--fucsia-dark);color:#fff;}
-.menu-btn{display:none;background:var(--fucsia);color:#fff;border:none;width:44px;height:44px;border-radius:50%;cursor:pointer;align-items:center;justify-content:center;}
+nav{position:fixed;top:14px;left:14px;right:14px;z-index:100;height:64px;padding:0 10px 0 24px;display:flex;align-items:center;justify-content:space-between;background:rgba(255,251,244,0.9);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-radius:var(--pill);max-width:1180px;margin:0 auto;box-shadow:0 6px 28px rgba(74,59,53,0.07);}
+.logo{font-family:var(--serif);font-size:1.28rem;font-weight:600;text-decoration:none;letter-spacing:-0.01em;display:inline-flex;align-items:center;gap:9px;}
+.logo em{color:var(--rose);font-style:italic;}
+.logo .mark{width:24px;height:24px;flex-shrink:0;}
+.nav-links{display:flex;gap:2px;list-style:none;align-items:center;}
+.nav-links a{display:block;font-size:0.87rem;font-weight:600;text-decoration:none;padding:9px 15px;border-radius:var(--pill);transition:background .22s,color .22s;}
+.nav-links a:hover{background:var(--sky-soft);}
+.nav-links .nav-growy{background:var(--butter-soft);}
+.nav-links .nav-growy:hover{background:var(--butter);}
+.nav-links .nav-cta{background:var(--rose);color:#fff;font-weight:700;padding:11px 22px;}
+.nav-links .nav-cta:hover{background:var(--rose-deep);color:#fff;}
+.menu-btn{display:none;background:var(--rose);color:#fff;border:none;width:44px;height:44px;border-radius:50%;cursor:pointer;align-items:center;justify-content:center;}
 
 /* ===== TICKER ===== */
-.ticker-outer{overflow:hidden;padding:10px 0;margin-top:82px;}
-.ticker{background:var(--fucsia);padding:12px 0;overflow:hidden;white-space:nowrap;transform:rotate(-1deg);width:104%;margin-left:-2%;}
-.ticker-track{display:inline-flex;animation:ticker 36s linear infinite;}
-.ticker-track span{font-size:0.82rem;font-weight:800;color:#fff;padding:0 1.4rem;letter-spacing:0.08em;text-transform:uppercase;}
-.ticker-track .sep{color:var(--yellow);padding:0 .2rem;}
+.ticker-outer{overflow:hidden;padding:12px 0;margin-top:86px;}
+.ticker{background:var(--sage-soft);padding:13px 0;overflow:hidden;white-space:nowrap;transform:rotate(-1.1deg);width:106%;margin-left:-3%;}
+.ticker-track{display:inline-flex;animation:ticker 40s linear infinite;}
+.ticker-track span{font-size:0.82rem;font-weight:700;color:var(--ink);padding:0 1.3rem;letter-spacing:0.09em;text-transform:lowercase;}
+.ticker-track .sep{color:var(--terra);}
 @keyframes ticker{to{transform:translateX(-50%);}}
 
 /* ===== BASE ===== */
-section{padding:6rem 1.5rem;position:relative;}
+section{padding:6.5rem 1.5rem;position:relative;}
 .wrap{max-width:1140px;margin:0 auto;position:relative;}
-.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:0.74rem;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:var(--black);background:var(--blue-soft);padding:7px 16px;border-radius:var(--pill);margin-bottom:1.2rem;}
-.eyebrow.y{background:var(--yellow-soft);}
-.eyebrow.p{background:var(--fucsia-soft);}
-.h2{font-family:var(--serif);font-size:clamp(2.1rem,4.4vw,3.3rem);font-weight:900;line-height:1.05;letter-spacing:-0.02em;margin-bottom:1rem;}
-.h2 em{font-style:italic;color:var(--fucsia);}
-.lead{font-size:1.04rem;color:var(--gray);line-height:1.8;}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:0.76rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--ink);background:var(--sky-soft);padding:8px 18px;border-radius:var(--pill);margin-bottom:1.3rem;}
+.eyebrow.y{background:var(--butter-soft);}
+.eyebrow.p{background:var(--rose-soft);}
+.eyebrow.g{background:var(--sage-soft);}
+.h2{font-family:var(--serif);font-size:clamp(2.1rem,4.3vw,3.2rem);font-weight:600;line-height:1.12;letter-spacing:-0.015em;margin-bottom:1rem;}
+.h2 em{font-style:italic;color:var(--rose);}
+.lead{font-size:1.05rem;color:var(--ink-soft);line-height:1.85;}
 .center{text-align:center;}
-.center .lead{max-width:560px;margin:0 auto;}
+.center .lead{max-width:580px;margin:0 auto;}
 
-.btn{display:inline-flex;align-items:center;gap:8px;padding:15px 28px;border-radius:var(--pill);font-size:0.95rem;font-weight:700;text-decoration:none;border:2px solid var(--black);transition:transform .18s,box-shadow .18s,background .2s;cursor:pointer;font-family:var(--sans);}
-.btn-main{background:var(--fucsia);border-color:var(--fucsia);color:#fff;box-shadow:4px 4px 0 var(--black);}
-.btn-main:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--black);}
-.btn-ghost{background:transparent;color:var(--black);}
-.btn-ghost:hover{background:var(--black);color:#fff;}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:15px 30px;border-radius:var(--pill);font-size:0.95rem;font-weight:700;text-decoration:none;transition:transform .2s,box-shadow .2s,background .22s;cursor:pointer;font-family:var(--sans);border:none;}
+.btn-main{background:var(--rose);color:#fff;box-shadow:0 8px 20px rgba(240,120,159,0.32);}
+.btn-main:hover{background:var(--rose-deep);transform:translateY(-2px);box-shadow:0 12px 26px rgba(240,120,159,0.4);}
+.btn-ghost{background:var(--paper);color:var(--ink);box-shadow:0 4px 14px rgba(74,59,53,0.07);}
+.btn-ghost:hover{background:var(--cream-deep);transform:translateY(-2px);}
 
-/* blobs */
 .blob{position:absolute;pointer-events:none;z-index:0;}
+.float{animation:float 8s ease-in-out infinite;}
+.spin{animation:spin 26s linear infinite;transform-origin:50% 50%;}
+@keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-14px);}}
+@keyframes spin{to{transform:rotate(360deg);}}
+
+/* onda divisoria */
+.wave{display:block;width:100%;height:auto;margin-bottom:-2px;}
 
 /* ===== HERO ===== */
-#hero{padding:4.5rem 1.5rem 5rem;}
-.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:3.5rem;align-items:center;}
-.hero-tag{display:inline-flex;align-items:center;gap:10px;background:var(--paper);border:1.5px solid var(--line);border-radius:var(--pill);padding:7px 16px 7px 8px;font-size:0.8rem;font-weight:600;color:var(--gray);margin-bottom:1.6rem;}
-.hero-tag b{background:var(--yellow);color:var(--black);border-radius:var(--pill);padding:3px 10px;font-size:0.72rem;font-weight:800;}
-.hero h1{font-family:var(--serif);font-size:clamp(2.7rem,5.4vw,4.6rem);font-weight:900;line-height:1.02;letter-spacing:-0.03em;margin-bottom:1.5rem;}
-.hero h1 em{font-style:italic;color:var(--fucsia);}
-.hero h1 .mark{position:relative;white-space:nowrap;}
-.hero h1 .mark::after{content:"";position:absolute;left:-4px;right:-4px;bottom:0.08em;height:0.32em;background:var(--yellow);border-radius:var(--pill);z-index:-1;}
-.hero-desc{font-size:1.06rem;color:var(--gray);line-height:1.8;margin-bottom:2rem;max-width:500px;}
-.hero-btns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:2.2rem;}
-.hero-stats{display:flex;gap:2rem;flex-wrap:wrap;}
-.hero-stats div{font-size:0.8rem;color:var(--gray);font-weight:600;line-height:1.35;}
-.hero-stats strong{display:block;font-family:var(--serif);font-size:2rem;font-weight:900;color:var(--black);}
+#hero{padding:3.5rem 1.5rem 5rem;}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:3.5rem;align-items:center;}
+.hero-tag{display:inline-flex;align-items:center;gap:10px;background:var(--paper);border-radius:var(--pill);padding:8px 18px 8px 9px;font-size:0.82rem;font-weight:600;color:var(--ink-soft);margin-bottom:1.7rem;box-shadow:0 4px 14px rgba(74,59,53,0.06);}
+.hero-tag b{background:var(--butter);color:var(--ink);border-radius:var(--pill);padding:4px 12px;font-size:0.74rem;font-weight:800;}
+.hero h1{font-family:var(--serif);font-size:clamp(2.6rem,5.2vw,4.3rem);font-weight:600;line-height:1.06;letter-spacing:-0.02em;margin-bottom:1.5rem;}
+.hero h1 em{font-style:italic;color:var(--rose);}
+.hero h1 .hl{position:relative;white-space:nowrap;}
+.hero h1 .hl::after{content:"";position:absolute;left:-6px;right:-6px;bottom:0.1em;height:0.34em;background:var(--butter-soft);border-radius:var(--pill);z-index:-1;}
+.hero-desc{font-size:1.07rem;color:var(--ink-soft);line-height:1.85;margin-bottom:2.1rem;max-width:490px;}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:2.4rem;}
+.hero-stats{display:flex;gap:2.2rem;flex-wrap:wrap;}
+.hero-stats div{font-size:0.82rem;color:var(--ink-soft);font-weight:600;line-height:1.4;}
+.hero-stats strong{display:block;font-family:var(--serif);font-size:2.1rem;font-weight:600;color:var(--terra);}
 
-/* sticker board (inspirado en la referencia) */
-.board{position:relative;background:var(--paper);border-radius:var(--r-xl);aspect-ratio:4/5;max-height:600px;overflow:hidden;border:1.5px solid var(--line);display:flex;align-items:center;justify-content:center;}
-.board .b1{top:-18%;left:-22%;width:70%;}
-.board .b2{bottom:-14%;right:-16%;width:66%;}
-.board .b3{top:12%;right:8%;width:9%;}
-.stack{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:10px;width:min(78%,330px);}
-.st{display:flex;align-items:center;justify-content:center;font-weight:700;font-size:clamp(1.05rem,2vw,1.4rem);color:var(--black);transition:transform .35s cubic-bezier(.3,1.6,.5,1);}
-.st:hover{transform:rotate(0deg) scale(1.05)!important;}
-.st-pill{background:var(--blue-soft);border-radius:var(--pill);padding:12px 40px;transform:rotate(3deg);}
-.st-arch{width:100%;}
-.st-arch svg{width:100%;height:auto;overflow:visible;}
-.st-cloud{position:relative;width:100%;height:76px;}
-.st-cloud svg{position:absolute;inset:0;width:100%;height:100%;}
-.st-cloud span{position:relative;}
-.st-rect{background:var(--fucsia);color:#fff;padding:12px 30px;transform:rotate(-3deg);width:92%;border-radius:4px;}
-.st-arrow{background:var(--yellow);padding:12px 54px 12px 34px;clip-path:polygon(0 0,84% 0,100% 50%,84% 100%,0 100%);font-weight:800;letter-spacing:0.12em;font-size:clamp(.95rem,1.7vw,1.15rem);text-transform:uppercase;}
+/* escena del hero */
+.scene{position:relative;aspect-ratio:1/1.06;max-height:560px;}
+.scene svg{position:absolute;}
+.scene .card{position:absolute;background:var(--paper);border-radius:var(--r-md);padding:14px 20px;font-weight:700;font-size:clamp(.92rem,1.5vw,1.08rem);box-shadow:0 10px 26px rgba(74,59,53,0.09);}
+.scene .c1{top:11%;left:4%;background:var(--rose-soft);transform:rotate(-5deg);}
+.scene .c2{top:33%;right:2%;background:var(--sky-soft);transform:rotate(4deg);}
+.scene .c3{bottom:20%;left:9%;background:var(--butter-soft);transform:rotate(3deg);}
+.scene .c4{bottom:5%;right:9%;background:var(--sage-soft);transform:rotate(-4deg);}
+.scene .petal{top:50%;left:50%;width:46%;transform:translate(-50%,-52%);}
+.scene .blobA{top:-4%;right:6%;width:30%;}
+.scene .blobB{bottom:4%;left:-4%;width:34%;}
+.scene .sq{top:4%;left:40%;width:13%;}
 
 /* ===== SOBRE ===== */
-#sobre{background:var(--paper);border-radius:var(--r-xl) var(--r-xl) 0 0;}
-.sobre{display:grid;grid-template-columns:380px 1fr;gap:5rem;align-items:center;}
-.photo-wrap{position:relative;padding:18px;}
-.photo-wrap .b1{left:-6%;bottom:2%;width:62%;}
-.photo-wrap .b2{right:-4%;top:-2%;width:34%;}
-.photo{position:relative;z-index:1;border-radius:999px 999px var(--r-lg) var(--r-lg);overflow:hidden;aspect-ratio:3/4;background:var(--fucsia-soft);border:3px solid var(--black);}
+#sobre{background:var(--paper);}
+.sobre{display:grid;grid-template-columns:360px 1fr;gap:5rem;align-items:center;}
+.photo-wrap{position:relative;padding:20px;}
+.photo{position:relative;z-index:2;border-radius:999px 999px 36px 36px;overflow:hidden;aspect-ratio:3/4;}
 .photo img{width:100%;height:100%;object-fit:cover;object-position:center top;}
-.photo-badge{position:absolute;z-index:2;right:-6px;bottom:42px;background:var(--yellow);border:2.5px solid var(--black);border-radius:var(--pill);padding:8px 16px;font-weight:800;font-size:0.8rem;transform:rotate(-6deg);}
-.photo-badge2{position:absolute;z-index:2;left:-4px;top:58px;background:var(--fucsia);color:#fff;border-radius:var(--pill);padding:8px 16px;font-weight:800;font-size:0.8rem;transform:rotate(5deg);}
-.sobre p{font-size:1.02rem;color:var(--gray);line-height:1.85;margin-bottom:1.1rem;}
-.sobre p strong{color:var(--black);}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:1.5rem;}
-.chip{padding:7px 15px;border-radius:var(--pill);font-size:0.78rem;font-weight:700;background:var(--bg);border:1.5px solid var(--line);}
-.chip:nth-child(3n+1){background:var(--fucsia-mist);}
-.chip:nth-child(3n+2){background:var(--blue-mist);}
-.chip:nth-child(3n){background:var(--yellow-mist);}
+.photo-wrap .flowerA{left:-14%;bottom:-6%;width:62%;z-index:1;}
+.photo-wrap .scallopA{right:-10%;top:-6%;width:44%;z-index:1;}
+.badge{position:absolute;z-index:3;background:var(--paper);border-radius:var(--pill);padding:9px 18px;font-weight:700;font-size:0.8rem;box-shadow:0 8px 20px rgba(74,59,53,0.1);}
+.badge-1{left:-10px;top:66px;transform:rotate(-6deg);background:var(--rose);color:#fff;}
+.badge-2{right:-6px;bottom:54px;transform:rotate(5deg);background:var(--butter);}
+.sobre p{font-size:1.03rem;color:var(--ink-soft);line-height:1.9;margin-bottom:1.1rem;}
+.sobre p strong{color:var(--ink);font-weight:700;}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:1.6rem;}
+.chip{padding:7px 16px;border-radius:var(--pill);font-size:0.79rem;font-weight:600;}
+.chip:nth-child(5n+1){background:var(--rose-mist);}
+.chip:nth-child(5n+2){background:var(--sky-soft);}
+.chip:nth-child(5n+3){background:var(--butter-soft);}
+.chip:nth-child(5n+4){background:var(--sage-soft);}
+.chip:nth-child(5n){background:var(--peach-soft);}
 
 /* ===== SERVICIOS ===== */
-#servicios{background:var(--paper);padding-top:3rem;}
-.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:3.2rem;}
-.serv{position:relative;overflow:hidden;border-radius:var(--r-lg);padding:2rem 1.8rem 1.8rem;transition:transform .25s,box-shadow .25s;}
-.serv:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(240,45,125,0.12);}
-.serv.c1{background:var(--fucsia-mist);}
-.serv.c2{background:var(--blue-mist);}
-.serv.c3{background:var(--yellow-mist);}
-.serv-shape{width:58px;height:58px;margin-bottom:1.3rem;}
-.serv-shape svg{width:100%;height:100%;}
-.serv-kicker{font-size:0.7rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray);margin-bottom:.4rem;}
-.serv h3{font-family:var(--serif);font-size:1.4rem;font-weight:900;line-height:1.15;margin-bottom:.6rem;}
-.serv h3 em{font-style:italic;}
-.serv p{font-size:0.88rem;color:#4a4a4a;line-height:1.7;margin-bottom:1.1rem;}
-.tags{display:flex;flex-wrap:wrap;gap:6px;}
-.tag{background:rgba(255,255,255,0.75);border-radius:var(--pill);padding:4px 11px;font-size:0.72rem;font-weight:700;}
+#servicios{background:var(--paper);padding-top:2rem;}
+.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:3.4rem;}
+.serv{position:relative;overflow:hidden;border-radius:var(--r-lg);padding:2.1rem 1.9rem 1.9rem;transition:transform .3s,box-shadow .3s;}
+.serv:hover{transform:translateY(-7px);box-shadow:0 20px 40px rgba(74,59,53,0.1);}
+.serv.c1{background:var(--rose-mist);}
+.serv.c2{background:var(--sky-soft);}
+.serv.c3{background:var(--butter-soft);}
+.serv.c4{background:var(--sage-soft);}
+.serv.c5{background:var(--peach-soft);}
+.serv.c6{background:var(--cream-deep);}
+.serv-icon{width:62px;height:62px;margin-bottom:1.4rem;}
+.serv-kicker{font-size:0.72rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:.45rem;}
+.serv h3{font-family:var(--serif);font-size:1.42rem;font-weight:600;line-height:1.2;margin-bottom:.6rem;}
+.serv h3 em{font-style:italic;color:var(--terra);}
+.serv p{font-size:0.9rem;color:#6B5B53;line-height:1.75;margin-bottom:1.2rem;}
+.tags{display:flex;flex-wrap:wrap;gap:7px;}
+.tag{background:rgba(255,255,255,0.75);border-radius:var(--pill);padding:5px 13px;font-size:0.73rem;font-weight:600;}
 
-/* ===== GROWY / MOM GROWING STORY ===== */
-#proyecto{background:var(--bg);overflow:hidden;}
-#proyecto .b1{top:-180px;right:-200px;width:400px;}
-#proyecto .wrap{z-index:1;}
-#proyecto .b2{bottom:-140px;left:-160px;width:420px;}
-.proj-head{display:grid;grid-template-columns:1.1fr 1fr;gap:3.5rem;align-items:end;margin-bottom:3rem;}
-.formula{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:1.4rem;}
-.formula .f{padding:10px 20px;border-radius:var(--pill);font-weight:800;font-size:0.95rem;border:2px solid var(--black);}
-.formula .f1{background:var(--blue-soft);}
-.formula .f2{background:var(--yellow);}
-.formula .f3{background:var(--fucsia);color:#fff;border-color:var(--fucsia);}
-.formula .op{font-family:var(--serif);font-weight:900;font-size:1.6rem;color:var(--fucsia);}
-.proj-story{font-size:1.02rem;color:var(--gray);line-height:1.85;}
+/* ===== PROYECTO ===== */
+#proyecto{background:var(--cream);overflow:hidden;}
+#proyecto .bgA{top:-60px;right:-120px;width:360px;}
+#proyecto .bgB{bottom:40px;left:-150px;width:340px;}
+.proj-head{display:grid;grid-template-columns:1.05fr 1fr;gap:3.5rem;align-items:end;margin-bottom:3.2rem;}
+.formula{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:1.6rem;}
+.formula .f{padding:11px 22px;border-radius:var(--pill);font-weight:700;font-size:0.96rem;}
+.formula .f1{background:var(--sky-soft);}
+.formula .f2{background:var(--butter);}
+.formula .f3{background:var(--rose);color:#fff;}
+.formula .op{font-family:var(--serif);font-weight:600;font-size:1.5rem;color:var(--terra);}
+.proj-story{font-size:1.03rem;color:var(--ink-soft);line-height:1.9;}
 .proj-story p+p{margin-top:1rem;}
-.proj-story strong{color:var(--black);}
+.proj-story strong{color:var(--ink);font-weight:700;}
 
-.brands{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
-.brand{position:relative;overflow:hidden;border-radius:var(--r-xl);padding:2.4rem 2.2rem 2.2rem;border:2.5px solid var(--black);display:flex;flex-direction:column;}
+.brands{display:grid;grid-template-columns:1fr 1fr;gap:22px;}
+.brand{position:relative;overflow:hidden;border-radius:var(--r-xl);padding:2.6rem 2.3rem 2.3rem;display:flex;flex-direction:column;}
 .brand.mgs{background:var(--paper);}
-.brand.app{background:var(--black);color:#fff;}
-.brand .blob{z-index:0;}
+.brand.app{background:var(--sage-soft);}
 .brand > *:not(.blob){position:relative;z-index:1;}
-.brand-label{display:inline-block;font-size:0.7rem;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;padding:6px 14px;border-radius:var(--pill);margin-bottom:1.3rem;align-self:flex-start;}
-.brand.mgs .brand-label{background:var(--fucsia-soft);}
-.brand.app .brand-label{background:var(--yellow);color:var(--black);}
-.brand h3{font-family:var(--serif);font-size:clamp(1.8rem,3vw,2.4rem);font-weight:900;line-height:1.05;margin-bottom:.8rem;}
-.brand h3 em{font-style:italic;color:var(--fucsia);}
-.brand.app h3 em{color:var(--yellow);}
-.brand p{font-size:0.94rem;line-height:1.75;margin-bottom:1.2rem;color:var(--gray);}
-.brand.app p{color:rgba(255,255,255,0.75);}
-.brand ul{list-style:none;display:flex;flex-wrap:wrap;gap:7px;margin-bottom:1.8rem;}
-.brand li{font-size:0.76rem;font-weight:700;padding:5px 12px;border-radius:var(--pill);background:var(--bg);}
-.brand.app li{background:rgba(255,255,255,0.1);color:#fff;}
-.brand .links{margin-top:auto;display:flex;flex-wrap:wrap;gap:10px;}
-.brand .btn{padding:12px 22px;font-size:0.88rem;}
-.brand.app .btn-ghost{border-color:#fff;color:#fff;}
-.brand.app .btn-ghost:hover{background:#fff;color:var(--black);}
-.brand.app .btn-main{box-shadow:4px 4px 0 var(--yellow);}
-.brand.app .btn-main:hover{box-shadow:6px 6px 0 var(--yellow);}
-.beta{display:inline-block;background:var(--blue);color:#fff;font-family:var(--sans);font-size:0.7rem;font-weight:800;letter-spacing:0.08em;padding:3px 10px;border-radius:var(--pill);vertical-align:middle;margin-left:8px;transform:translateY(-6px);}
+.brand-label{display:inline-block;font-size:0.72rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;padding:7px 16px;border-radius:var(--pill);margin-bottom:1.4rem;align-self:flex-start;}
+.brand.mgs .brand-label{background:var(--rose-soft);}
+.brand.app .brand-label{background:var(--paper);}
+.brand h3{font-family:var(--serif);font-size:clamp(1.8rem,3vw,2.4rem);font-weight:600;line-height:1.1;margin-bottom:.9rem;}
+.brand h3 em{font-style:italic;color:var(--rose);}
+.brand.app h3 em{color:var(--terra);}
+.brand p{font-size:0.96rem;line-height:1.8;margin-bottom:1.3rem;color:var(--ink-soft);}
+.brand ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-bottom:1.9rem;}
+.brand li{font-size:0.78rem;font-weight:600;padding:6px 14px;border-radius:var(--pill);background:var(--cream);}
+.brand.app li{background:var(--paper);}
+.brand .links{margin-top:auto;display:flex;flex-wrap:wrap;gap:11px;}
+.brand .btn{padding:13px 24px;font-size:0.89rem;}
+.beta{display:inline-block;background:var(--sky);color:var(--ink);font-family:var(--sans);font-size:0.68rem;font-weight:800;letter-spacing:0.1em;padding:4px 11px;border-radius:var(--pill);vertical-align:middle;margin-left:10px;transform:translateY(-8px);}
 
-.built{margin-top:4rem;}
-.built-title{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:900;margin-bottom:.5rem;}
-.built-title em{font-style:italic;color:var(--fucsia);}
-.built-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:2rem;}
-.built-card{background:var(--paper);border:1.5px solid var(--line);border-radius:var(--r-md);padding:1.4rem 1.3rem;}
-.built-card .n{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;font-weight:800;font-size:0.85rem;margin-bottom:.9rem;}
-.built-card:nth-child(4n+1) .n{background:var(--fucsia-soft);}
-.built-card:nth-child(4n+2) .n{background:var(--blue-soft);}
-.built-card:nth-child(4n+3) .n{background:var(--yellow);}
-.built-card:nth-child(4n) .n{background:var(--fucsia);color:#fff;}
-.built-card h4{font-size:0.98rem;font-weight:800;margin-bottom:.35rem;line-height:1.3;}
-.built-card p{font-size:0.83rem;color:var(--gray);line-height:1.6;}
+.built{margin-top:4.5rem;}
+.built-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:2.2rem;}
+.built-card{background:var(--paper);border-radius:var(--r-md);padding:1.6rem 1.4rem;}
+.built-card .n{display:inline-flex;align-items:center;justify-content:center;width:52px;height:52px;font-family:var(--serif);font-weight:600;font-size:1.05rem;color:var(--ink);margin-bottom:1rem;background-size:contain;background-repeat:no-repeat;background-position:center;}
+.built-card h4{font-size:1rem;font-weight:700;margin-bottom:.4rem;line-height:1.35;}
+.built-card p{font-size:0.85rem;color:var(--ink-soft);line-height:1.7;}
 
-.proj-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:2.5rem;background:var(--fucsia);border-radius:var(--r-lg);color:#fff;overflow:hidden;}
-.proj-stats div{padding:1.6rem 1.4rem;border-right:1.5px solid rgba(255,255,255,0.25);}
-.proj-stats div:last-child{border-right:none;}
-.proj-stats strong{display:block;font-family:var(--serif);font-size:2.3rem;font-weight:900;line-height:1;margin-bottom:.4rem;}
-.proj-stats span{font-size:0.82rem;font-weight:600;opacity:.92;line-height:1.4;display:block;}
+.proj-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:2.6rem;}
+.proj-stats div{background:var(--paper);border-radius:var(--r-md);padding:1.7rem 1.5rem;}
+.proj-stats strong{display:block;font-family:var(--serif);font-size:2.4rem;font-weight:600;line-height:1;margin-bottom:.5rem;}
+.proj-stats div:nth-child(1) strong{color:var(--rose);}
+.proj-stats div:nth-child(2) strong{color:var(--teal);}
+.proj-stats div:nth-child(3) strong{color:var(--terra);}
+.proj-stats div:nth-child(4) strong{color:var(--sage);}
+.proj-stats span{font-size:0.84rem;color:var(--ink-soft);font-weight:600;line-height:1.5;display:block;}
 
-.proj-quote{margin-top:3.5rem;text-align:center;}
-.proj-quote blockquote{font-family:var(--serif);font-size:clamp(1.5rem,3vw,2.2rem);font-weight:700;font-style:italic;line-height:1.3;max-width:760px;margin:0 auto 1rem;}
-.proj-quote blockquote span{color:var(--fucsia);}
-.proj-quote cite{font-style:normal;font-size:0.85rem;font-weight:700;color:var(--gray);}
+.quote{margin-top:4rem;text-align:center;position:relative;}
+.quote blockquote{font-family:var(--serif);font-size:clamp(1.5rem,3vw,2.3rem);font-weight:500;font-style:italic;line-height:1.35;max-width:780px;margin:0 auto 1rem;}
+.quote blockquote span{color:var(--rose);}
+.quote cite{font-style:normal;font-size:0.86rem;font-weight:700;color:var(--ink-soft);}
 
 /* ===== CASOS ===== */
 #casos{background:var(--paper);}
-.casos{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:3rem;}
-.caso{border-radius:var(--r-lg);padding:2rem 1.8rem;display:flex;flex-direction:column;border:1.5px solid var(--line);background:var(--bg);transition:transform .25s;}
-.caso:hover{transform:translateY(-6px) rotate(-0.5deg);}
-.caso-result{display:flex;align-items:center;justify-content:center;width:120px;height:120px;border-radius:50%;margin-bottom:1.4rem;font-family:var(--serif);font-weight:900;font-size:2.1rem;}
-.caso:nth-child(1) .caso-result{background:var(--blue-soft);}
-.caso:nth-child(2) .caso-result{background:var(--yellow);border-radius:999px 999px 0 0;}
-.caso:nth-child(3) .caso-result{background:var(--fucsia);color:#fff;border-radius:24px;transform:rotate(-4deg);}
-.caso-tag{font-size:0.7rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--fucsia-dark);margin-bottom:.5rem;}
-.caso h3{font-family:var(--serif);font-size:1.35rem;font-weight:900;line-height:1.2;margin-bottom:.6rem;}
-.caso p{font-size:0.88rem;color:var(--gray);line-height:1.7;}
-.caso .metric{margin-top:auto;padding-top:1.2rem;font-size:0.8rem;font-weight:800;}
+.casos{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:3.2rem;}
+.caso{border-radius:var(--r-lg);padding:2.1rem 1.9rem;display:flex;flex-direction:column;background:var(--cream);transition:transform .3s;}
+.caso:hover{transform:translateY(-7px);}
+.caso-badge{position:relative;width:128px;height:128px;display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;}
+.caso-badge svg{position:absolute;inset:0;width:100%;height:100%;}
+.caso-badge span{position:relative;font-family:var(--serif);font-weight:600;font-size:1.9rem;color:var(--ink);}
+.caso-tag{font-size:0.72rem;font-weight:700;letter-spacing:0.13em;text-transform:uppercase;color:var(--terra);margin-bottom:.55rem;}
+.caso h3{font-family:var(--serif);font-size:1.32rem;font-weight:600;line-height:1.25;margin-bottom:.65rem;}
+.caso p{font-size:0.9rem;color:var(--ink-soft);line-height:1.75;}
+.caso .metric{margin-top:auto;padding-top:1.3rem;font-size:0.82rem;font-weight:700;color:var(--ink);}
 
 /* ===== STACK ===== */
-#stack{background:var(--bg);}
-.stack-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:3rem;}
-.tool-group{background:var(--paper);border-radius:var(--r-md);padding:1.4rem;border:1.5px solid var(--line);}
-.tool-group h4{font-size:0.72rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--fucsia-dark);margin-bottom:.9rem;}
-.tool-list{display:flex;flex-wrap:wrap;gap:6px;}
-.tool{background:var(--bg);border-radius:var(--pill);padding:5px 12px;font-size:0.78rem;font-weight:600;}
+#stack{background:var(--cream);}
+.stack-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:3rem;}
+.tool-group{background:var(--paper);border-radius:var(--r-md);padding:1.5rem;}
+.tool-group h4{font-size:0.74rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--terra);margin-bottom:1rem;}
+.tool-list{display:flex;flex-wrap:wrap;gap:7px;}
+.tool{background:var(--cream);border-radius:var(--pill);padding:6px 13px;font-size:0.79rem;font-weight:600;}
 
 /* ===== CONTACTO ===== */
 #contacto{background:var(--paper);overflow:hidden;}
-#contacto .b1{top:40px;left:-140px;width:340px;}
-#contacto .b2{bottom:-80px;right:-120px;width:360px;}
-.contact{max-width:780px;margin:0 auto;position:relative;z-index:1;}
-.form-card{background:#fff;border-radius:var(--r-xl);padding:2.6rem;border:2.5px solid var(--black);box-shadow:8px 8px 0 var(--fucsia);margin-top:2.5rem;}
-.sf-progress{background:var(--bg);border-radius:var(--pill);height:8px;margin-bottom:.6rem;overflow:hidden;}
-.sf-progress-bar{height:100%;background:var(--fucsia);border-radius:var(--pill);transition:width .4s ease;width:25%;}
-.sf-step-label{font-size:0.72rem;font-weight:800;color:var(--gray);text-transform:uppercase;letter-spacing:0.12em;margin-bottom:1.8rem;}
+#contacto .bgA{top:60px;left:-150px;width:320px;}
+#contacto .bgB{bottom:-60px;right:-130px;width:340px;}
+.contact{max-width:800px;margin:0 auto;position:relative;z-index:1;}
+.form-card{background:var(--cream);border-radius:var(--r-xl);padding:2.8rem;margin-top:2.6rem;box-shadow:0 18px 44px rgba(74,59,53,0.08);}
+.sf-progress{background:var(--paper);border-radius:var(--pill);height:9px;margin-bottom:.7rem;overflow:hidden;}
+.sf-progress-bar{height:100%;background:var(--rose);border-radius:var(--pill);transition:width .45s ease;width:25%;}
+.sf-step-label{font-size:0.74rem;font-weight:700;color:var(--ink-soft);text-transform:uppercase;letter-spacing:0.14em;margin-bottom:1.9rem;}
 .sf-step{display:none;}
 .sf-step.active{display:block;}
-.sf-step-title{font-family:var(--serif);font-size:1.6rem;font-weight:900;margin-bottom:1.5rem;line-height:1.2;}
-.sf-cards-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:1.6rem;}
-.sf-card{background:var(--bg);border:2px solid transparent;border-radius:var(--r-md);padding:1rem .7rem;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;cursor:pointer;transition:all .18s;text-align:center;font-size:1.5rem;min-height:92px;font-family:var(--sans);color:var(--black);}
+.sf-step-title{font-family:var(--serif);font-size:1.6rem;font-weight:600;margin-bottom:1.6rem;line-height:1.25;}
+.sf-cards-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin-bottom:1.7rem;}
+.sf-card{background:var(--paper);border:2px solid transparent;border-radius:var(--r-md);padding:1.1rem .7rem;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;cursor:pointer;transition:all .2s;text-align:center;min-height:96px;font-family:var(--sans);color:var(--ink);}
+.sf-card svg{width:30px;height:30px;}
 .sf-card span{font-size:0.8rem;font-weight:700;line-height:1.3;}
-.sf-card:hover{border-color:var(--fucsia);transform:translateY(-2px);}
-.sf-card.selected{border-color:var(--black);background:var(--yellow);}
-.sf-next,.sf-submit{background:var(--fucsia);color:#fff;border:2px solid var(--fucsia);padding:13px 32px;border-radius:var(--pill);font-size:0.95rem;font-weight:700;cursor:pointer;font-family:var(--sans);transition:background .2s,transform .15s,opacity .2s;}
-.sf-next:hover:not([disabled]),.sf-submit:hover{background:var(--fucsia-dark);border-color:var(--fucsia-dark);}
-.sf-next[disabled]{opacity:.35;cursor:not-allowed;}
-.sf-back{background:none;border:none;font-family:var(--sans);font-weight:700;color:var(--gray);cursor:pointer;margin-right:14px;font-size:0.9rem;}
-.sf-back:hover{color:var(--fucsia);}
-.sf-submit{width:100%;margin-top:.5rem;padding:15px;}
-.sf-fields{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:1.25rem;}
-.sf-field{display:flex;flex-direction:column;gap:6px;}
+.sf-card:hover{transform:translateY(-3px);box-shadow:0 10px 22px rgba(74,59,53,0.09);}
+.sf-card.selected{border-color:var(--rose);background:var(--rose-mist);}
+.sf-next,.sf-submit{background:var(--rose);color:#fff;border:none;padding:14px 34px;border-radius:var(--pill);font-size:0.95rem;font-weight:700;cursor:pointer;font-family:var(--sans);transition:background .22s,transform .18s,opacity .22s;}
+.sf-next:hover:not([disabled]),.sf-submit:hover{background:var(--rose-deep);transform:translateY(-2px);}
+.sf-next[disabled]{opacity:.35;cursor:not-allowed;transform:none;}
+.sf-back{background:none;border:none;font-family:var(--sans);font-weight:700;color:var(--ink-soft);cursor:pointer;margin-right:14px;font-size:0.9rem;}
+.sf-back:hover{color:var(--rose);}
+.sf-submit{width:100%;margin-top:.5rem;padding:16px;}
+.sf-fields{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-bottom:1.3rem;}
+.sf-field{display:flex;flex-direction:column;gap:7px;}
 .sf-field-full{grid-column:1/-1;}
-.sf-field label{font-size:0.8rem;font-weight:700;}
-.sf-field input,.sf-field textarea{background:var(--bg);border:2px solid transparent;border-radius:var(--r-md);padding:12px 16px;font-size:0.9rem;font-family:var(--sans);color:var(--black);outline:none;transition:border-color .2s;}
-.sf-field input:focus,.sf-field textarea:focus{border-color:var(--fucsia);background:#fff;}
+.sf-field label{font-size:0.82rem;font-weight:700;}
+.sf-field input,.sf-field textarea{background:var(--paper);border:2px solid transparent;border-radius:var(--r-md);padding:13px 17px;font-size:0.92rem;font-family:var(--sans);color:var(--ink);outline:none;transition:border-color .2s;}
+.sf-field input:focus,.sf-field textarea:focus{border-color:var(--rose);}
 .sf-field textarea{resize:vertical;min-height:120px;}
-.sf-error{color:var(--fucsia-dark);font-size:0.85rem;font-weight:700;margin-top:.6rem;display:none;}
+.sf-error{color:var(--terra);font-size:0.86rem;font-weight:700;margin-top:.7rem;display:none;}
 .sf-success{text-align:center;padding:2rem 1rem;}
-.sf-success-icon{font-size:4rem;margin-bottom:1rem;}
-.sf-success h3{font-family:var(--serif);font-size:2.2rem;font-weight:900;margin-bottom:.5rem;}
-.sf-success p{color:var(--gray);margin-bottom:1.4rem;}
+.sf-success svg{width:88px;height:88px;margin:0 auto 1.2rem;}
+.sf-success h3{font-family:var(--serif);font-size:2.1rem;font-weight:600;margin-bottom:.5rem;}
+.sf-success p{color:var(--ink-soft);margin-bottom:1.5rem;}
 
 /* ===== FOOTER ===== */
-footer{background:var(--black);color:#fff;padding:4rem 1.5rem 2.5rem;border-radius:var(--r-xl) var(--r-xl) 0 0;margin-top:-1px;}
+footer{background:var(--sage-soft);padding:4.5rem 1.5rem 2.5rem;}
 .foot{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:3rem;}
-.foot .logo{color:#fff;font-size:1.6rem;}
-.foot .logo em{color:var(--fucsia);}
-.foot p{color:rgba(255,255,255,0.6);font-size:0.88rem;margin-top:.8rem;line-height:1.7;max-width:320px;}
-.foot h5{font-size:0.72rem;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:var(--yellow);margin-bottom:1rem;}
-.foot ul{list-style:none;display:flex;flex-direction:column;gap:.6rem;}
-.foot ul a{color:rgba(255,255,255,0.85);text-decoration:none;font-size:0.9rem;font-weight:600;}
-.foot ul a:hover{color:var(--fucsia);}
-.foot-bottom{max-width:1140px;margin:3rem auto 0;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,0.12);font-size:0.8rem;color:rgba(255,255,255,0.5);display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;}
+.foot .logo{font-size:1.5rem;}
+.foot p{color:var(--ink-soft);font-size:0.9rem;margin-top:1rem;line-height:1.8;max-width:330px;}
+.foot h5{font-size:0.74rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--terra);margin-bottom:1.1rem;}
+.foot ul{list-style:none;display:flex;flex-direction:column;gap:.7rem;}
+.foot ul a{text-decoration:none;font-size:0.92rem;font-weight:600;}
+.foot ul a:hover{color:var(--rose-deep);}
+.foot-bottom{max-width:1140px;margin:3rem auto 0;padding-top:1.6rem;border-top:1.5px solid rgba(74,59,53,0.12);font-size:0.82rem;color:var(--ink-soft);display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;}
 
 /* ===== ANIM ===== */
-.fade-up{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease;}
+.fade-up{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease;}
 .fade-up.visible{opacity:1;transform:none;}
-.float{animation:float 7s ease-in-out infinite;}
-@keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-12px);}}
 @media (prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important;scroll-behavior:auto!important;}
   .fade-up{opacity:1;transform:none;}
@@ -312,35 +323,33 @@ footer{background:var(--black);color:#fff;padding:4rem 1.5rem 2.5rem;border-radi
 /* ===== RESPONSIVE ===== */
 @media(max-width:980px){
   .hero,.sobre,.proj-head{grid-template-columns:1fr;gap:3rem;}
-  .board{max-width:460px;width:100%;margin:0 auto;}
+  .scene{max-width:460px;width:100%;margin:0 auto;}
   .sobre{justify-items:center;}
   .photo-wrap{max-width:340px;}
   .serv-grid,.casos{grid-template-columns:1fr 1fr;}
   .brands{grid-template-columns:1fr;}
-  .built-grid,.stack-grid{grid-template-columns:1fr 1fr;}
-  .proj-stats{grid-template-columns:1fr 1fr;}
-  .proj-stats div:nth-child(2){border-right:none;}
-  .proj-stats div:nth-child(-n+2){border-bottom:1.5px solid rgba(255,255,255,0.25);}
+  .built-grid,.stack-grid,.proj-stats{grid-template-columns:1fr 1fr;}
   .foot{grid-template-columns:1fr 1fr;}
   .foot > div:first-child{grid-column:1/-1;}
 }
 @media(max-width:820px){
   .menu-btn{display:inline-flex;}
-  .nav-links{position:absolute;top:calc(100% + 10px);left:0;right:0;flex-direction:column;align-items:stretch;gap:4px;background:var(--paper);border:1.5px solid var(--line);border-radius:var(--r-lg);padding:10px;box-shadow:0 18px 40px rgba(0,0,0,0.08);display:none;}
+  .nav-links{position:absolute;top:calc(100% + 12px);left:0;right:0;flex-direction:column;align-items:stretch;gap:4px;background:var(--paper);border-radius:var(--r-lg);padding:12px;box-shadow:0 20px 44px rgba(74,59,53,0.12);display:none;}
   nav.open .nav-links{display:flex;}
-  .nav-links a{padding:12px 16px;font-size:0.95rem;}
+  .nav-links a{padding:13px 18px;font-size:0.96rem;}
   .nav-links .nav-cta{text-align:center;}
 }
 @media(max-width:620px){
   section{padding:4.5rem 1.15rem;}
-  #hero{padding:3rem 1.15rem 4rem;}
-  .serv-grid,.casos,.built-grid,.stack-grid{grid-template-columns:1fr;}
+  #hero{padding:2.5rem 1.15rem 4rem;}
+  .serv-grid,.casos,.built-grid,.stack-grid,.proj-stats{grid-template-columns:1fr;}
   .sf-cards-grid{grid-template-columns:repeat(2,1fr);}
   .sf-fields{grid-template-columns:1fr;}
-  .form-card{padding:1.6rem 1.25rem;box-shadow:5px 5px 0 var(--fucsia);}
-  .brand{padding:2rem 1.5rem;}
-  .hero-stats{gap:1.4rem;}
+  .form-card{padding:1.7rem 1.3rem;}
+  .brand{padding:2rem 1.6rem;}
+  .hero-stats{gap:1.5rem;}
   .foot{grid-template-columns:1fr;}
+  .grid-bg::before{background-size:40px 40px;}
 }
 </style>
 </head>
@@ -350,16 +359,29 @@ footer{background:var(--black);color:#fff;padding:4rem 1.5rem 2.5rem;border-radi
 <!-- End Google Tag Manager (noscript) -->
 <a href="#main" class="skip">Saltar al contenido</a>
 
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <path id="p-flower" d="M146 100C212.8 122.4 195.6 163.9 132.5 132.5 163.9 195.6 122.4 212.8 100 146 77.6 212.8 36.1 195.6 67.5 132.5 4.4 163.9-12.8 122.4 54 100-12.8 77.6 4.4 36.1 67.5 67.5 36.1 4.4 77.6-12.8 100 54 122.4-12.8 163.9 4.4 132.5 67.5 195.6 36.1 212.8 77.6 146 100Z"/>
+    <path id="p-flower6" d="M146 100C211.1 129.8 181.3 181.3 123 139.8 129.8 211.1 70.2 211.1 77 139.8 18.7 181.3-11.1 129.8 54 100-11.1 70.2 18.7 18.7 77 60.2 70.2-11.1 129.8-11.1 123 60.2 181.3 18.7 211.1 70.2 146 100Z"/>
+    <path id="p-scallop" d="M184 100A16.8 16.8 0 0 1 172.7 142A16.8 16.8 0 0 1 142 172.7A16.8 16.8 0 0 1 100 184A16.8 16.8 0 0 1 58 172.7A16.8 16.8 0 0 1 27.3 142A16.8 16.8 0 0 1 16 100A16.8 16.8 0 0 1 27.3 58A16.8 16.8 0 0 1 58 27.3A16.8 16.8 0 0 1 100 16A16.8 16.8 0 0 1 142 27.3A16.8 16.8 0 0 1 172.7 58A16.8 16.8 0 0 1 184 100Z"/>
+    <path id="p-blob" d="M163 32c22 20 33 55 25 85s-35 55-66 63-65-3-88-25S4 92 14 63 54 10 86 6s55 6 77 26Z"/>
+    <path id="p-arch" d="M16 184V84a84 84 0 0 1 168 0v100Z"/>
+  </defs>
+</svg>
+
 <!-- NAV -->
 <nav id="nav" aria-label="Principal">
-  <a href="#hero" class="logo">Guada<em>Bernuchi</em></a>
+  <a href="#hero" class="logo">
+    <svg class="mark" viewBox="0 0 200 200" aria-hidden="true"><use href="#p-flower" fill="#F0789F"/><circle cx="100" cy="100" r="34" fill="#F6C76B"/></svg>
+    Guada<em>Bernuchi</em>
+  </a>
   <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
     <svg width="18" height="14" viewBox="0 0 18 14" fill="none" aria-hidden="true"><path d="M1 1h16M1 7h16M1 13h16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
   </button>
   <ul class="nav-links" id="navLinks">
     <li><a href="#sobre">Sobre mí</a></li>
     <li><a href="#servicios">Servicios</a></li>
-    <li><a href="#proyecto" class="nav-growy">🌱 Growy</a></li>
+    <li><a href="#proyecto" class="nav-growy">Growy</a></li>
     <li><a href="#casos">Casos</a></li>
     <li><a href="#stack">Stack</a></li>
     <li><a href="#contacto" class="nav-cta">Trabajemos juntas</a></li>
@@ -367,77 +389,69 @@ footer{background:var(--black);color:#fff;padding:4rem 1.5rem 2.5rem;border-radi
 </nav>
 
 <!-- TICKER -->
-<div class="ticker-outer" aria-hidden="true"><div class="ticker">
-  <div class="ticker-track">
-    <span>Growth Marketing</span><span class="sep">✦</span>
-    <span>Ecosistemas IA con Claude</span><span class="sep">✦</span>
-    <span>Citada en AI Overviews</span><span class="sep">✦</span>
-    <span>Creadora de Growy App</span><span class="sep">✦</span>
-    <span>LATAM + España</span><span class="sep">✦</span>
-    <span>Marketing con propósito</span><span class="sep">✦</span>
-    <span>Growth Marketing</span><span class="sep">✦</span>
-    <span>Ecosistemas IA con Claude</span><span class="sep">✦</span>
-    <span>Citada en AI Overviews</span><span class="sep">✦</span>
-    <span>Creadora de Growy App</span><span class="sep">✦</span>
-    <span>LATAM + España</span><span class="sep">✦</span>
-    <span>Marketing con propósito</span><span class="sep">✦</span>
+<div class="ticker-outer" aria-hidden="true">
+  <div class="ticker">
+    <div class="ticker-track">
+      <span>growth marketing</span><span class="sep">✿</span>
+      <span>ecosistemas con IA</span><span class="sep">✿</span>
+      <span>citada en AI Overviews</span><span class="sep">✿</span>
+      <span>creadora de Growy App</span><span class="sep">✿</span>
+      <span>LATAM + España</span><span class="sep">✿</span>
+      <span>marketing con propósito</span><span class="sep">✿</span>
+      <span>growth marketing</span><span class="sep">✿</span>
+      <span>ecosistemas con IA</span><span class="sep">✿</span>
+      <span>citada en AI Overviews</span><span class="sep">✿</span>
+      <span>creadora de Growy App</span><span class="sep">✿</span>
+      <span>LATAM + España</span><span class="sep">✿</span>
+      <span>marketing con propósito</span><span class="sep">✿</span>
+    </div>
   </div>
-</div></div>
+</div>
 
 <main id="main">
 
 <!-- HERO -->
-<section id="hero">
+<section id="hero" class="grid-bg">
   <div class="wrap hero">
     <div>
-      <div class="hero-tag"><b>8+ años</b> Marketing Digital · LATAM &amp; España</div>
-      <h1>Marketing, IA y datos para marcas que quieren <em>crecer</em> <span class="mark">con propósito.</span></h1>
+      <div class="hero-tag"><b>8+ años</b> Marketing digital · LATAM &amp; España</div>
+      <h1>Marketing, IA y datos para marcas que quieren <em>crecer</em> <span class="hl">con propósito.</span></h1>
       <p class="hero-desc">Soy especialista en Growth Marketing: Paid Media, SEO, contenido e IA aplicada. Construyo estrategias que conectan creatividad con resultados medibles, y lo demuestro con mi propio proyecto.</p>
       <div class="hero-btns">
-        <a href="#proyecto" class="btn btn-main">Conocé Growy 🌱</a>
+        <a href="#proyecto" class="btn btn-main">Conocé Growy</a>
         <a href="#contacto" class="btn btn-ghost">Trabajemos juntas</a>
       </div>
       <div class="hero-stats">
         <div><strong>8+</strong>años de<br>experiencia</div>
         <div><strong>6+</strong>industrias<br>trabajadas</div>
-        <div><strong>1</strong>app propia<br>con IA</div>
+        <div><strong>1</strong>app propia<br>creada con IA</div>
       </div>
     </div>
 
-    <div class="board fade-up" aria-label="Marketing con datos e IA para marcas que crecen con propósito">
-      <svg class="blob b1" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="100" fill="#C9E4FB"/></svg>
-      <svg class="blob b2" viewBox="0 0 200 180" aria-hidden="true"><path d="M100 180 C30 130 0 95 0 55 C0 22 26 0 56 0 C76 0 92 10 100 26 C108 10 124 0 144 0 C174 0 200 22 200 55 C200 95 170 130 100 180Z" fill="#FAD3E3"/></svg>
-      <svg class="blob b3 float" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0 L24 16 L40 20 L24 24 L20 40 L16 24 L0 20 L16 16Z" fill="#FFD93D"/></svg>
-      <div class="stack" aria-hidden="true">
-        <div class="st st-pill">marketing</div>
-        <div class="st st-arch">
-          <svg viewBox="0 0 260 140">
-            <defs><path id="archPath" d="M44 136 A86 86 0 0 1 216 136"/></defs>
-            <path d="M10 140 A120 120 0 0 1 250 140 L178 140 A48 48 0 0 0 82 140 Z" fill="#FFD93D"/>
-            <text font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-size="22" letter-spacing="4" fill="#1A1A1A"><textPath href="#archPath" startOffset="50%" text-anchor="middle">CON DATOS</textPath></text>
-            <text x="130" y="132" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-weight="700" font-size="22" fill="#1A1A1A">e IA</text>
-          </svg>
-        </div>
-        <div class="st st-cloud">
-          <svg viewBox="0 0 300 76" preserveAspectRatio="none"><circle cx="52" cy="38" r="38" fill="#FAD3E3"/><circle cx="114" cy="38" r="38" fill="#FAD3E3"/><circle cx="186" cy="38" r="38" fill="#FAD3E3"/><circle cx="248" cy="38" r="38" fill="#FAD3E3"/><rect x="52" y="0" width="196" height="76" fill="#FAD3E3"/></svg>
-          <span>para marcas</span>
-        </div>
-        <div class="st st-rect">que crecen</div>
-        <div class="st st-arrow">con propósito</div>
-      </div>
+    <div class="scene fade-up" role="img" aria-label="Marketing, contenido, datos e IA para marcas que crecen con propósito">
+      <svg class="blobA float" viewBox="0 0 200 200" aria-hidden="true"><use href="#p-blob" fill="#E2EDEE"/></svg>
+      <svg class="blobB" viewBox="0 0 200 200" aria-hidden="true"><use href="#p-scallop" fill="#FBEAC2"/></svg>
+      <svg class="sq float" viewBox="0 0 200 200" aria-hidden="true" style="animation-delay:-3s"><use href="#p-flower6" fill="#F2A97E"/></svg>
+      <svg class="petal spin" viewBox="0 0 200 200" aria-hidden="true"><use href="#p-flower" fill="#F9DCE4"/><circle cx="100" cy="100" r="36" fill="#F0789F"/></svg>
+      <div class="card c1">marketing</div>
+      <div class="card c2">contenido</div>
+      <div class="card c3">datos + IA</div>
+      <div class="card c4">buenas causas</div>
     </div>
   </div>
 </section>
+
+<svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 46c120-26 240-38 360-24s240 54 360 54 240-40 360-54 240-2 360 24v46H0Z" fill="#FFFBF4"/></svg>
 
 <!-- SOBRE MÍ -->
 <section id="sobre">
   <div class="wrap sobre">
     <div class="photo-wrap fade-up">
-      <svg class="blob b1" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="100" fill="#FFEFA8"/></svg>
-      <svg class="blob b2" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="100" fill="#C9E4FB"/></svg>
+      <svg class="blob flowerA" viewBox="0 0 200 200" aria-hidden="true"><use href="#p-flower6" fill="#FBEAC2"/></svg>
+      <svg class="blob scallopA" viewBox="0 0 200 200" aria-hidden="true"><use href="#p-scallop" fill="#E2EDEE"/></svg>
       <div class="photo"><img src="guadalupe-bernuchi.jpg" alt="Guadalupe Bernuchi" width="720" height="900" loading="lazy"></div>
-      <span class="photo-badge2">IA aplicada ✦</span>
-      <span class="photo-badge">LATAM &amp; España</span>
+      <span class="badge badge-1">IA aplicada</span>
+      <span class="badge badge-2">LATAM &amp; España</span>
     </div>
     <div>
       <span class="eyebrow p">Sobre mí</span>
@@ -471,42 +485,42 @@ footer{background:var(--black);color:#fff;padding:4rem 1.5rem 2.5rem;border-radi
     </div>
     <div class="serv-grid">
       <article class="serv c1 fade-up">
-        <div class="serv-shape"><svg viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="28" fill="#F02D7D"/><circle cx="30" cy="30" r="16" fill="#FBE4EE"/><circle cx="30" cy="30" r="6" fill="#F02D7D"/></svg></div>
+        <svg class="serv-icon" viewBox="0 0 200 200" aria-hidden="true"><use href="#p-flower" fill="#F0789F"/><circle cx="100" cy="100" r="34" fill="#FFFBF4"/></svg>
         <div class="serv-kicker">Paid Media</div>
         <h3>Campañas que <em>convierten</em></h3>
         <p>Gestión integral de campañas pagadas full funnel. Diseño, ejecución, optimización y análisis con foco en conversión real y presencia digital.</p>
         <div class="tags"><span class="tag">Google Ads</span><span class="tag">Meta Ads</span><span class="tag">TikTok Ads</span><span class="tag">LinkedIn Ads</span><span class="tag">Pinterest Ads</span></div>
       </article>
       <article class="serv c2 fade-up">
-        <div class="serv-shape"><svg viewBox="0 0 60 60" aria-hidden="true"><path d="M30 2 L36 24 L58 30 L36 36 L30 58 L24 36 L2 30 L24 24Z" fill="#4FACF5"/></svg></div>
+        <svg class="serv-icon" viewBox="0 0 200 200" aria-hidden="true"><use href="#p-scallop" fill="#BED2D5"/><path d="M100 54c8 26 16 34 42 46-26 12-34 20-42 46-8-26-16-34-42-46 26-12 34-20 42-46Z" fill="#5F7E7C"/></svg>
         <div class="serv-kicker">IA &amp; Datos</div>
         <h3>IA + datos <em>en acción</em></h3>
         <p>Construyo ecosistemas con Claude para leer datos y transformarlos en acciones concretas. Dashboards automatizados, análisis y estrategia basada en IA real.</p>
         <div class="tags"><span class="tag">Claude</span><span class="tag">ChatGPT</span><span class="tag">AI Overviews</span><span class="tag">Automatización</span><span class="tag">Dashboards</span></div>
       </article>
       <article class="serv c3 fade-up">
-        <div class="serv-shape"><svg viewBox="0 0 60 60" aria-hidden="true"><path d="M2 58 A28 28 0 0 1 58 58 L44 58 A14 14 0 0 0 16 58Z" fill="#FFD93D" stroke="#1A1A1A" stroke-width="2"/><circle cx="30" cy="14" r="8" fill="#F02D7D"/></svg></div>
+        <svg class="serv-icon" viewBox="0 0 200 200" aria-hidden="true"><use href="#p-arch" fill="#E07A5F"/><circle cx="100" cy="96" r="26" fill="#FFFBF4"/></svg>
         <div class="serv-kicker">SEO &amp; Contenido</div>
         <h3>Crecer en <em>orgánico</em></h3>
         <p>Estrategia de contenido SEO para blog y redes. Research de keywords, copywriting y optimización On-Page. Auditoría SEO técnica para equipos de desarrollo.</p>
         <div class="tags"><span class="tag">SEO On-Page</span><span class="tag">Blog</span><span class="tag">YouTube</span><span class="tag">Instagram</span><span class="tag">Pinterest</span></div>
       </article>
-      <article class="serv c2 fade-up">
-        <div class="serv-shape"><svg viewBox="0 0 60 60" aria-hidden="true"><rect x="6" y="34" width="10" height="22" rx="5" fill="#4FACF5"/><rect x="25" y="20" width="10" height="36" rx="5" fill="#F02D7D"/><rect x="44" y="6" width="10" height="50" rx="5" fill="#1A1A1A"/></svg></div>
+      <article class="serv c4 fade-up">
+        <svg class="serv-icon" viewBox="0 0 200 200" aria-hidden="true"><use href="#p-blob" fill="#A8B48A"/><rect x="58" y="104" width="20" height="44" rx="10" fill="#FFFBF4"/><rect x="90" y="80" width="20" height="68" rx="10" fill="#FFFBF4"/><rect x="122" y="56" width="20" height="92" rx="10" fill="#FFFBF4"/></svg>
         <div class="serv-kicker">Analytics</div>
         <h3>Trackeo &amp; <em>análisis</em></h3>
         <p>Implementación de Tag Manager, auditorías SEO y UX, y análisis de datos con Claude para tomar decisiones basadas en información real.</p>
         <div class="tags"><span class="tag">Tag Manager</span><span class="tag">GA4</span><span class="tag">Claude</span><span class="tag">Hotjar</span><span class="tag">Auditorías</span></div>
       </article>
-      <article class="serv c3 fade-up">
-        <div class="serv-shape"><svg viewBox="0 0 60 60" aria-hidden="true"><circle cx="16" cy="30" r="14" fill="#F02D7D"/><circle cx="30" cy="30" r="14" fill="#FFD93D"/><circle cx="44" cy="30" r="14" fill="#4FACF5"/></svg></div>
+      <article class="serv c5 fade-up">
+        <svg class="serv-icon" viewBox="0 0 200 200" aria-hidden="true"><circle cx="66" cy="100" r="44" fill="#F0789F"/><circle cx="100" cy="100" r="44" fill="#F6C76B" opacity=".85"/><circle cx="134" cy="100" r="44" fill="#BED2D5" opacity=".85"/></svg>
         <div class="serv-kicker">Diseño &amp; Contenido</div>
         <h3>Diseño que <em>comunica</em></h3>
         <p>Piezas visuales, briefs para equipos de diseño y audiovisual, landings en HubSpot y WordPress, formularios interactivos con IA y edición de video con CapCut.</p>
         <div class="tags"><span class="tag">Canva</span><span class="tag">CapCut</span><span class="tag">Briefs creativos</span><span class="tag">Landings</span><span class="tag">HubSpot</span></div>
       </article>
-      <article class="serv c1 fade-up">
-        <div class="serv-shape"><svg viewBox="0 0 60 60" aria-hidden="true"><path d="M4 18 H40 L54 30 L40 42 H4Z" fill="#F02D7D"/><circle cx="16" cy="30" r="4" fill="#fff"/></svg></div>
+      <article class="serv c6 fade-up">
+        <svg class="serv-icon" viewBox="0 0 200 200" aria-hidden="true"><use href="#p-flower6" fill="#F2A97E"/><circle cx="100" cy="100" r="30" fill="#FFFBF4"/></svg>
         <div class="serv-kicker">Estrategia</div>
         <h3>Estrategia en <em>movimiento</em></h3>
         <p>Planificación y gestión de proyectos y campañas integrales. Coordinación de equipos multidisciplinarios, tiempos y comunicación efectiva entre áreas.</p>
@@ -516,14 +530,16 @@ footer{background:var(--black);color:#fff;padding:4rem 1.5rem 2.5rem;border-radi
   </div>
 </section>
 
+<svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 46c120-26 240-38 360-24s240 54 360 54 240-40 360-54 240-2 360 24v46H0Z" fill="#FDF3E7"/></svg>
+
 <!-- MOM GROWING STORY + GROWY -->
-<section id="proyecto">
-  <svg class="blob b1" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="100" fill="#FFEFA8"/></svg>
-  <svg class="blob b2" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="100" fill="#C9E4FB"/></svg>
+<section id="proyecto" class="grid-bg">
+  <svg class="blob bgA" viewBox="0 0 200 200" aria-hidden="true"><use href="#p-flower" fill="#FBEAC2"/></svg>
+  <svg class="blob bgB" viewBox="0 0 200 200" aria-hidden="true"><use href="#p-scallop" fill="#E2EDEE"/></svg>
   <div class="wrap">
     <div class="proj-head">
       <div>
-        <span class="eyebrow y">🌱 Mi proyecto propio</span>
+        <span class="eyebrow g">Mi proyecto propio</span>
         <h2 class="h2">Lo que se puede lograr con <em>marketing, IA</em> y una buena causa.</h2>
         <div class="formula" aria-label="Marketing más IA más buenas causas">
           <span class="f f1">Marketing</span><span class="op">+</span><span class="f f2">IA</span><span class="op">+</span><span class="f f3">Buenas causas</span>
@@ -537,26 +553,22 @@ footer{background:var(--black);color:#fff;padding:4rem 1.5rem 2.5rem;border-radi
 
     <div class="brands">
       <article class="brand mgs fade-up">
-        <svg class="blob" style="top:-70px;right:-70px;width:200px" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="100" fill="#FBE4EE"/></svg>
+        <svg class="blob" style="top:-80px;right:-70px;width:220px" viewBox="0 0 200 200" aria-hidden="true"><use href="#p-flower6" fill="#FCEDF1"/></svg>
         <span class="brand-label">Marca personal</span>
         <h3>Mom <em>Growing</em> Story</h3>
         <p>La marca madre: mi historia, un blog pensado para buscadores y para IA, una Guía colaborativa de lugares adaptados y una tienda. Una comunidad que crece con cada aporte.</p>
-        <ul>
-          <li>Blog con SEO + AI Overviews</li><li>Guía colaborativa</li><li>Tienda online</li><li>Comunidad en Instagram</li>
-        </ul>
+        <ul><li>Blog con SEO + AI Overviews</li><li>Guía colaborativa</li><li>Tienda online</li><li>Comunidad en Instagram</li></ul>
         <div class="links">
           <a class="btn btn-main" href="https://www.growingstory.com.ar" target="_blank" rel="noopener">Visitar la web ↗</a>
           <a class="btn btn-ghost" href="https://www.instagram.com/momgrowingstory/" target="_blank" rel="noopener">@momgrowingstory</a>
         </div>
       </article>
       <article class="brand app fade-up">
-        <svg class="blob" style="bottom:-90px;right:-60px;width:240px;opacity:.14" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="100" fill="#F02D7D"/></svg>
+        <svg class="blob" style="bottom:-90px;right:-70px;width:240px;opacity:.5" viewBox="0 0 200 200" aria-hidden="true"><use href="#p-blob" fill="#FFFBF4"/></svg>
         <span class="brand-label">App propia</span>
         <h3>Growy <em>App</em><span class="beta">BETA</span></h3>
         <p>La app para que mamás y papás de niños con discapacidad organicen todo lo de su hijo en un solo lugar, y lo compartan con la familia.</p>
-        <ul>
-          <li>Terapias y agenda</li><li>Medicación</li><li>Facturas y reintegros</li><li>Trámites y vencimientos</li><li>Resumen para la consulta</li><li>Botón SOS</li>
-        </ul>
+        <ul><li>Terapias y agenda</li><li>Medicación</li><li>Facturas y reintegros</li><li>Trámites y vencimientos</li><li>Resumen para la consulta</li><li>Botón SOS</li></ul>
         <div class="links">
           <a class="btn btn-main" href="https://www.growingstory.com.ar/growy" target="_blank" rel="noopener">Conocer Growy ↗</a>
         </div>
@@ -564,17 +576,17 @@ footer{background:var(--black);color:#fff;padding:4rem 1.5rem 2.5rem;border-radi
     </div>
 
     <div class="built">
-      <h3 class="built-title">Cómo lo <em>construí</em></h3>
-      <p class="lead" style="max-width:640px">Estrategia, producto y tecnología de punta a punta, trabajando codo a codo con IA. Todo lo que hago para otras marcas, aplicado a la mía.</p>
+      <h3 class="h2" style="font-size:clamp(1.7rem,3vw,2.3rem)">Cómo lo <em>construí</em></h3>
+      <p class="lead" style="max-width:660px">Estrategia, producto y tecnología de punta a punta, trabajando codo a codo con IA. Todo lo que hago para otras marcas, aplicado a la mía.</p>
       <div class="built-grid">
-        <div class="built-card fade-up"><span class="n">01</span><h4>Marca y posicionamiento</h4><p>Ecosistema con marca madre y producto, identidad visual y un símbolo que lo atraviesa todo: la plantita que se riega con el uso.</p></div>
-        <div class="built-card fade-up"><span class="n">02</span><h4>Web y blog para buscadores e IA</h4><p>SEO completo, datos estructurados, preguntas frecuentes, fuentes oficiales y llms.txt para que los asistentes de IA la entiendan y la citen.</p></div>
-        <div class="built-card fade-up"><span class="n">03</span><h4>Producto desarrollado con IA</h4><p>Una app instalable en el celular, creada con Claude: de la idea a la Beta publicada, con seguridad por familia en cada dato.</p></div>
-        <div class="built-card fade-up"><span class="n">04</span><h4>CRM y medición propios</h4><p>Panel con embudo, canales, retención y links de campaña. Mide el comportamiento, nunca el contenido de las familias.</p></div>
-        <div class="built-card fade-up"><span class="n">05</span><h4>Comunidad que co-crea</h4><p>Formularios propios para sumar ideas a la app y lugares adaptados a la Guía. Cada aporte se revisa antes de publicarse.</p></div>
-        <div class="built-card fade-up"><span class="n">06</span><h4>Privacidad primero</h4><p>Sin publicidad ni píxeles en la app, cookies con aceptar y rechazar al mismo nivel, y nada de diagnósticos.</p></div>
-        <div class="built-card fade-up"><span class="n">07</span><h4>Growth con foco en retención</h4><p>La métrica que importa es el uso recurrente, no la cantidad de registros. Etapas de cuenta: activa, en riesgo y dormida.</p></div>
-        <div class="built-card fade-up"><span class="n">08</span><h4>Infraestructura en costo cero</h4><p>Todo funciona con planes gratuitos mientras se valida. Cada cambio se publica solo en uno o dos minutos.</p></div>
+        <div class="built-card fade-up"><span class="n" style="background-image:url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Cpath d=%22M146 100C212.8 122.4 195.6 163.9 132.5 132.5 163.9 195.6 122.4 212.8 100 146 77.6 212.8 36.1 195.6 67.5 132.5 4.4 163.9-12.8 122.4 54 100-12.8 77.6 4.4 36.1 67.5 67.5 36.1 4.4 77.6-12.8 100 54 122.4-12.8 163.9 4.4 132.5 67.5 195.6 36.1 212.8 77.6 146 100Z%22 fill=%22%23F9DCE4%22/%3E%3C/svg%3E')">01</span><h4>Marca y posicionamiento</h4><p>Ecosistema con marca madre y producto, identidad visual y un símbolo que lo atraviesa todo: la plantita que se riega con el uso.</p></div>
+        <div class="built-card fade-up"><span class="n" style="background-image:url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Cpath d=%22M146 100C212.8 122.4 195.6 163.9 132.5 132.5 163.9 195.6 122.4 212.8 100 146 77.6 212.8 36.1 195.6 67.5 132.5 4.4 163.9-12.8 122.4 54 100-12.8 77.6 4.4 36.1 67.5 67.5 36.1 4.4 77.6-12.8 100 54 122.4-12.8 163.9 4.4 132.5 67.5 195.6 36.1 212.8 77.6 146 100Z%22 fill=%22%23E2EDEE%22/%3E%3C/svg%3E')">02</span><h4>Web y blog para buscadores e IA</h4><p>SEO completo, datos estructurados, preguntas frecuentes, fuentes oficiales y llms.txt para que los asistentes de IA la entiendan y la citen.</p></div>
+        <div class="built-card fade-up"><span class="n" style="background-image:url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Cpath d=%22M146 100C212.8 122.4 195.6 163.9 132.5 132.5 163.9 195.6 122.4 212.8 100 146 77.6 212.8 36.1 195.6 67.5 132.5 4.4 163.9-12.8 122.4 54 100-12.8 77.6 4.4 36.1 67.5 67.5 36.1 4.4 77.6-12.8 100 54 122.4-12.8 163.9 4.4 132.5 67.5 195.6 36.1 212.8 77.6 146 100Z%22 fill=%22%23FBEAC2%22/%3E%3C/svg%3E')">03</span><h4>Producto desarrollado con IA</h4><p>Una app instalable en el celular, creada con Claude: de la idea a la Beta publicada, con seguridad por familia en cada dato.</p></div>
+        <div class="built-card fade-up"><span class="n" style="background-image:url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Cpath d=%22M146 100C212.8 122.4 195.6 163.9 132.5 132.5 163.9 195.6 122.4 212.8 100 146 77.6 212.8 36.1 195.6 67.5 132.5 4.4 163.9-12.8 122.4 54 100-12.8 77.6 4.4 36.1 67.5 67.5 36.1 4.4 77.6-12.8 100 54 122.4-12.8 163.9 4.4 132.5 67.5 195.6 36.1 212.8 77.6 146 100Z%22 fill=%22%23DFE5CE%22/%3E%3C/svg%3E')">04</span><h4>CRM y medición propios</h4><p>Panel con embudo, canales, retención y links de campaña. Mide el comportamiento, nunca el contenido de las familias.</p></div>
+        <div class="built-card fade-up"><span class="n" style="background-image:url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Cpath d=%22M146 100C212.8 122.4 195.6 163.9 132.5 132.5 163.9 195.6 122.4 212.8 100 146 77.6 212.8 36.1 195.6 67.5 132.5 4.4 163.9-12.8 122.4 54 100-12.8 77.6 4.4 36.1 67.5 67.5 36.1 4.4 77.6-12.8 100 54 122.4-12.8 163.9 4.4 132.5 67.5 195.6 36.1 212.8 77.6 146 100Z%22 fill=%22%23FADFC9%22/%3E%3C/svg%3E')">05</span><h4>Comunidad que co-crea</h4><p>Formularios propios para sumar ideas a la app y lugares adaptados a la Guía. Cada aporte se revisa antes de publicarse.</p></div>
+        <div class="built-card fade-up"><span class="n" style="background-image:url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Cpath d=%22M146 100C212.8 122.4 195.6 163.9 132.5 132.5 163.9 195.6 122.4 212.8 100 146 77.6 212.8 36.1 195.6 67.5 132.5 4.4 163.9-12.8 122.4 54 100-12.8 77.6 4.4 36.1 67.5 67.5 36.1 4.4 77.6-12.8 100 54 122.4-12.8 163.9 4.4 132.5 67.5 195.6 36.1 212.8 77.6 146 100Z%22 fill=%22%23F9DCE4%22/%3E%3C/svg%3E')">06</span><h4>Privacidad primero</h4><p>Sin publicidad ni píxeles en la app, cookies con aceptar y rechazar al mismo nivel, y nada de diagnósticos.</p></div>
+        <div class="built-card fade-up"><span class="n" style="background-image:url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Cpath d=%22M146 100C212.8 122.4 195.6 163.9 132.5 132.5 163.9 195.6 122.4 212.8 100 146 77.6 212.8 36.1 195.6 67.5 132.5 4.4 163.9-12.8 122.4 54 100-12.8 77.6 4.4 36.1 67.5 67.5 36.1 4.4 77.6-12.8 100 54 122.4-12.8 163.9 4.4 132.5 67.5 195.6 36.1 212.8 77.6 146 100Z%22 fill=%22%23E2EDEE%22/%3E%3C/svg%3E')">07</span><h4>Growth con foco en retención</h4><p>La métrica que importa es el uso recurrente, no la cantidad de registros. Etapas de cuenta: activa, en riesgo y dormida.</p></div>
+        <div class="built-card fade-up"><span class="n" style="background-image:url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Cpath d=%22M146 100C212.8 122.4 195.6 163.9 132.5 132.5 163.9 195.6 122.4 212.8 100 146 77.6 212.8 36.1 195.6 67.5 132.5 4.4 163.9-12.8 122.4 54 100-12.8 77.6 4.4 36.1 67.5 67.5 36.1 4.4 77.6-12.8 100 54 122.4-12.8 163.9 4.4 132.5 67.5 195.6 36.1 212.8 77.6 146 100Z%22 fill=%22%23FBEAC2%22/%3E%3C/svg%3E')">08</span><h4>Infraestructura en costo cero</h4><p>Todo funciona con planes gratuitos mientras se valida. Cada cambio se publica solo en uno o dos minutos.</p></div>
       </div>
     </div>
 
@@ -585,12 +597,14 @@ footer{background:var(--black);color:#fff;padding:4rem 1.5rem 2.5rem;border-radi
       <div><strong>100%</strong><span>en planes gratuitos mientras se valida</span></div>
     </div>
 
-    <div class="proj-quote">
+    <div class="quote">
       <blockquote>“Lo mismo que hice por mi familia lo puedo hacer <span>por tu marca</span>.”</blockquote>
       <cite>Guadalupe Bernuchi, creadora de Growy</cite>
     </div>
   </div>
 </section>
+
+<svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 46c120-26 240-38 360-24s240 54 360 54 240-40 360-54 240-2 360 24v46H0Z" fill="#FFFBF4"/></svg>
 
 <!-- CASOS -->
 <section id="casos">
@@ -602,21 +616,21 @@ footer{background:var(--black);color:#fff;padding:4rem 1.5rem 2.5rem;border-radi
     </div>
     <div class="casos">
       <article class="caso fade-up">
-        <div class="caso-result">✦</div>
+        <div class="caso-badge"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#p-scallop" fill="#E2EDEE"/><use href="#p-flower6" fill="#5F7E7C" transform="translate(100 100) scale(0.34) translate(-100 -100)"/></svg></div>
         <div class="caso-tag">IA + SEO + Contenido</div>
         <h3>Crecimiento en AI Overviews y LLMs</h3>
         <p>Diseñé un sistema de plantillas para artículos de blog optimizado para ser citado por inteligencias artificiales. Resultado: más apariciones en AI Overviews de Google y primeras citaciones en ChatGPT y Perplexity, con leads calificados desde canales que la competencia todavía ignora.</p>
         <div class="metric">→ Citaciones crecientes en AI Overviews</div>
       </article>
       <article class="caso fade-up">
-        <div class="caso-result">+20%</div>
+        <div class="caso-badge"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#p-flower" fill="#FBEAC2"/></svg><span>+20%</span></div>
         <div class="caso-tag">Paid Media · Full Funnel</div>
         <h3>Estrategia Full Funnel en Google y Meta</h3>
         <p>Campañas que integran awareness, consideración y conversión en Google Ads y Meta. Al trabajar las etapas de forma coordinada, y no con campañas de conversión aisladas, logramos un incremento real en conversiones y más presencia en redes.</p>
         <div class="metric">→ +20% conversiones con estrategia full funnel</div>
       </article>
       <article class="caso fade-up">
-        <div class="caso-result">+50%</div>
+        <div class="caso-badge"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#p-blob" fill="#F9DCE4"/></svg><span>+50%</span></div>
         <div class="caso-tag">YouTube + Growth</div>
         <h3>YouTube como motor de conversión</h3>
         <p>Estrategia híbrida que combinó crecimiento de canal con priorización de conversión, sin perder el foco en comunidad. El canal pasó a ser una fuente de adquisición real y sostenible, no solo de visibilidad.</p>
@@ -625,6 +639,8 @@ footer{background:var(--black);color:#fff;padding:4rem 1.5rem 2.5rem;border-radi
     </div>
   </div>
 </section>
+
+<svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 46c120-26 240-38 360-24s240 54 360 54 240-40 360-54 240-2 360 24v46H0Z" fill="#FDF3E7"/></svg>
 
 <!-- STACK -->
 <section id="stack">
@@ -646,10 +662,12 @@ footer{background:var(--black);color:#fff;padding:4rem 1.5rem 2.5rem;border-radi
   </div>
 </section>
 
+<svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 46c120-26 240-38 360-24s240 54 360 54 240-40 360-54 240-2 360 24v46H0Z" fill="#FFFBF4"/></svg>
+
 <!-- CONTACTO -->
 <section id="contacto">
-  <svg class="blob b1" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="100" fill="#FAD3E3"/></svg>
-  <svg class="blob b2" viewBox="0 0 200 180" aria-hidden="true"><path d="M100 180 C30 130 0 95 0 55 C0 22 26 0 56 0 C76 0 92 10 100 26 C108 10 124 0 144 0 C174 0 200 22 200 55 C200 95 170 130 100 180Z" fill="#FFEFA8"/></svg>
+  <svg class="blob bgA" viewBox="0 0 200 200" aria-hidden="true"><use href="#p-flower6" fill="#FCEDF1"/></svg>
+  <svg class="blob bgB" viewBox="0 0 200 200" aria-hidden="true"><use href="#p-scallop" fill="#FBEAC2"/></svg>
   <div class="contact">
     <div class="center">
       <span class="eyebrow p">¡Hablemos!</span>
@@ -664,14 +682,14 @@ footer{background:var(--black);color:#fff;padding:4rem 1.5rem 2.5rem;border-radi
       <div class="sf-step active" id="sf-step-1">
         <div class="sf-step-title">¿En qué rubro está tu marca?</div>
         <div class="sf-cards-grid">
-          <button type="button" class="sf-card" data-val="Ecommerce" onclick="selectCard(this,'rubro')">🛍️<span>Ecommerce</span></button>
-          <button type="button" class="sf-card" data-val="Salud y Wellness" onclick="selectCard(this,'rubro')">🏋️<span>Salud &amp; Wellness</span></button>
-          <button type="button" class="sf-card" data-val="Educación" onclick="selectCard(this,'rubro')">🎓<span>Educación</span></button>
-          <button type="button" class="sf-card" data-val="Tech / SaaS" onclick="selectCard(this,'rubro')">💻<span>Tech / SaaS</span></button>
-          <button type="button" class="sf-card" data-val="Gastronomía" onclick="selectCard(this,'rubro')">🍽️<span>Gastronomía</span></button>
-          <button type="button" class="sf-card" data-val="Servicios profesionales" onclick="selectCard(this,'rubro')">🏢<span>Servicios prof.</span></button>
-          <button type="button" class="sf-card" data-val="Causa social / ONG" onclick="selectCard(this,'rubro')">💗<span>Causa social</span></button>
-          <button type="button" class="sf-card" data-val="Otro" onclick="selectCard(this,'rubro')">✨<span>Otro</span></button>
+          <button type="button" class="sf-card" data-val="Ecommerce" onclick="selectCard(this,'rubro')"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#p-flower" fill="#F0789F"/></svg><span>Ecommerce</span></button>
+          <button type="button" class="sf-card" data-val="Salud y Wellness" onclick="selectCard(this,'rubro')"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#p-scallop" fill="#A8B48A"/></svg><span>Salud &amp; Wellness</span></button>
+          <button type="button" class="sf-card" data-val="Educación" onclick="selectCard(this,'rubro')"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#p-arch" fill="#F6C76B"/></svg><span>Educación</span></button>
+          <button type="button" class="sf-card" data-val="Tech / SaaS" onclick="selectCard(this,'rubro')"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#p-blob" fill="#BED2D5"/></svg><span>Tech / SaaS</span></button>
+          <button type="button" class="sf-card" data-val="Gastronomía" onclick="selectCard(this,'rubro')"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#p-flower6" fill="#E07A5F"/></svg><span>Gastronomía</span></button>
+          <button type="button" class="sf-card" data-val="Servicios profesionales" onclick="selectCard(this,'rubro')"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#p-scallop" fill="#F2A97E"/></svg><span>Servicios prof.</span></button>
+          <button type="button" class="sf-card" data-val="Causa social / ONG" onclick="selectCard(this,'rubro')"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#p-flower" fill="#A8B48A"/></svg><span>Causa social</span></button>
+          <button type="button" class="sf-card" data-val="Otro" onclick="selectCard(this,'rubro')"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#p-blob" fill="#F9DCE4"/></svg><span>Otro</span></button>
         </div>
         <button class="sf-next" id="sf-next-1" onclick="goStep(2)" disabled>Siguiente →</button>
       </div>
@@ -679,12 +697,12 @@ footer{background:var(--black);color:#fff;padding:4rem 1.5rem 2.5rem;border-radi
       <div class="sf-step" id="sf-step-2">
         <div class="sf-step-title">¿Qué necesitás?</div>
         <div class="sf-cards-grid">
-          <button type="button" class="sf-card" data-val="Paid Media" onclick="selectCard(this,'servicio')">🎯<span>Paid Media</span></button>
-          <button type="button" class="sf-card" data-val="SEO y Contenido" onclick="selectCard(this,'servicio')">📈<span>SEO &amp; Contenido</span></button>
-          <button type="button" class="sf-card" data-val="IA y Datos" onclick="selectCard(this,'servicio')">🤖<span>IA &amp; Datos</span></button>
-          <button type="button" class="sf-card" data-val="Tracking y Análisis" onclick="selectCard(this,'servicio')">🔍<span>Tracking &amp; Análisis</span></button>
-          <button type="button" class="sf-card" data-val="Diseño y Creatividad" onclick="selectCard(this,'servicio')">✏️<span>Diseño &amp; Creatividad</span></button>
-          <button type="button" class="sf-card" data-val="Consultoría de Marketing" onclick="selectCard(this,'servicio')">🗂️<span>Consultoría</span></button>
+          <button type="button" class="sf-card" data-val="Paid Media" onclick="selectCard(this,'servicio')"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#p-flower" fill="#F0789F"/></svg><span>Paid Media</span></button>
+          <button type="button" class="sf-card" data-val="SEO y Contenido" onclick="selectCard(this,'servicio')"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#p-arch" fill="#E07A5F"/></svg><span>SEO &amp; Contenido</span></button>
+          <button type="button" class="sf-card" data-val="IA y Datos" onclick="selectCard(this,'servicio')"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#p-scallop" fill="#BED2D5"/></svg><span>IA &amp; Datos</span></button>
+          <button type="button" class="sf-card" data-val="Tracking y Análisis" onclick="selectCard(this,'servicio')"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#p-blob" fill="#A8B48A"/></svg><span>Tracking &amp; Análisis</span></button>
+          <button type="button" class="sf-card" data-val="Diseño y Creatividad" onclick="selectCard(this,'servicio')"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#p-flower6" fill="#F2A97E"/></svg><span>Diseño &amp; Creatividad</span></button>
+          <button type="button" class="sf-card" data-val="Consultoría de Marketing" onclick="selectCard(this,'servicio')"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#p-flower" fill="#F6C76B"/></svg><span>Consultoría</span></button>
         </div>
         <button class="sf-back" onclick="goStep(1)">← Volver</button>
         <button class="sf-next" id="sf-next-2" onclick="goStep(3)" disabled>Siguiente →</button>
@@ -704,14 +722,14 @@ footer{background:var(--black);color:#fff;padding:4rem 1.5rem 2.5rem;border-radi
           <div class="sf-field"><label for="sf-email">Tu email</label><input type="email" id="sf-email" placeholder="email@tuempresa.com" autocomplete="email" required></div>
           <div class="sf-field sf-field-full"><label for="sf-message">Contame brevemente sobre tu negocio y qué objetivo querés lograr</label><textarea id="sf-message" placeholder="Ej: Tengo una tienda de ropa online y quiero aumentar las ventas a través de campañas pagadas..."></textarea></div>
         </div>
-        <button class="sf-submit" id="sf-submit-btn" onclick="submitSmartForm()">Enviar ✦</button>
-        <button class="sf-back" style="margin-top:12px" onclick="goStep(3)">← Volver</button>
+        <button class="sf-submit" id="sf-submit-btn" onclick="submitSmartForm()">Enviar</button>
+        <button class="sf-back" style="margin-top:14px" onclick="goStep(3)">← Volver</button>
         <div class="sf-error" id="sf-error" role="alert"></div>
       </div>
 
       <div class="sf-step" id="sf-step-5">
         <div class="sf-success">
-          <div class="sf-success-icon">🎉</div>
+          <svg viewBox="0 0 200 200" aria-hidden="true"><use href="#p-flower" fill="#F9DCE4"/><circle cx="100" cy="100" r="34" fill="#F6C76B"/></svg>
           <h3>¡Mensaje enviado!</h3>
           <p>Te respondo en menos de 24 horas. Mientras tanto, podés seguirme en LinkedIn.</p>
           <a href="https://www.linkedin.com/in/guadalupe-bernuchi/" target="_blank" rel="noopener" class="btn btn-main">Ver LinkedIn →</a>
@@ -725,11 +743,16 @@ footer{background:var(--black);color:#fff;padding:4rem 1.5rem 2.5rem;border-radi
 
 <canvas id="confetti-canvas" style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:9999;display:none;"></canvas>
 
+<svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 46c120-26 240-38 360-24s240 54 360 54 240-40 360-54 240-2 360 24v46H0Z" fill="#DFE5CE"/></svg>
+
 <!-- FOOTER -->
 <footer>
   <div class="foot">
     <div>
-      <a href="#hero" class="logo">Guada<em>Bernuchi</em></a>
+      <a href="#hero" class="logo">
+        <svg class="mark" viewBox="0 0 200 200" aria-hidden="true"><use href="#p-flower" fill="#F0789F"/><circle cx="100" cy="100" r="34" fill="#F6C76B"/></svg>
+        Guada<em>Bernuchi</em>
+      </a>
       <p>Growth Marketing con datos e IA para marcas de LATAM y España. Creadora de Mom Growing Story y Growy App.</p>
     </div>
     <div>
@@ -751,17 +774,15 @@ footer{background:var(--black);color:#fff;padding:4rem 1.5rem 2.5rem;border-radi
   </div>
   <div class="foot-bottom">
     <span>© 2026 Guadalupe Bernuchi — Marketing Digital · LATAM &amp; España</span>
-    <span>Hecho con marketing, IA y 💗</span>
+    <span>Hecho con marketing, IA y mucho cariño</span>
   </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script>
-// EMAILJS
 const EJS_SVC='service_z0wubmb',EJS_TPL='template_lid6u3e',EJS_KEY='MKRSZLtR7f9WgQr1A';
 if(typeof emailjs!=='undefined')emailjs.init(EJS_KEY);
 
-// SMART FORM
 const SUB_OPTIONS={
   'Paid Media':['Google Ads','Meta Ads','TikTok Ads','LinkedIn Ads','Pinterest Ads','No sé, necesito orientación'],
   'SEO y Contenido':['Blog','YouTube','Redes sociales','Auditoría SEO','Keyword research','Todo junto'],
@@ -770,7 +791,10 @@ const SUB_OPTIONS={
   'Diseño y Creatividad':['Briefs creativos','Landings','Piezas para redes','Edición de video','Todo junto'],
   'Consultoría de Marketing':['Estrategia desde cero','Auditoría integral','Consultoría puntual','Full funnel','No sé, necesito orientación']
 };
+const SUB_SHAPES=['#p-flower','#p-scallop','#p-blob','#p-flower6','#p-arch','#p-flower'];
+const SUB_COLORS=['#F0789F','#A8B48A','#BED2D5','#F2A97E','#F6C76B','#5F7E7C'];
 let sfData={rubro:'',servicio:'',subopcion:'',step:1};
+
 function selectCard(el,type){
   el.parentElement.querySelectorAll('.sf-card').forEach(c=>{c.classList.remove('selected');c.setAttribute('aria-pressed','false');});
   el.classList.add('selected');el.setAttribute('aria-pressed','true');
@@ -782,7 +806,7 @@ function escapeHtml(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','
 function goStep(n){
   if(n===3&&sfData.step===2){
     const svc=sfData.servicio,opts=SUB_OPTIONS[svc]||[];
-    document.getElementById('subGrid').innerHTML=opts.map(o=>`<button type="button" class="sf-card" data-val="${escapeHtml(o)}" onclick="selectCard(this,'subopcion')"><span style="font-size:0.85rem">${escapeHtml(o)}</span></button>`).join('');
+    document.getElementById('subGrid').innerHTML=opts.map((o,i)=>`<button type="button" class="sf-card" data-val="${escapeHtml(o)}" onclick="selectCard(this,'subopcion')"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="${SUB_SHAPES[i%6]}" fill="${SUB_COLORS[i%6]}"/></svg><span>${escapeHtml(o)}</span></button>`).join('');
     document.getElementById('sf-sub-title').textContent=`¿Qué aspecto de ${svc} te interesa?`;
     document.getElementById('sf-next-3').disabled=true;
     sfData.subopcion='';
@@ -813,32 +837,30 @@ async function submitSmartForm(){
     launchConfetti();goStep(5);
   }catch(e){
     errEl.textContent='Algo salió mal. Escribime a gbernuchi@gmail.com';
-    errEl.style.display='block';btn.disabled=false;btn.textContent='Enviar ✦';
+    errEl.style.display='block';btn.disabled=false;btn.textContent='Enviar';
   }
 }
-
-// CONFETI
 function launchConfetti(){
   if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
   const canvas=document.getElementById('confetti-canvas');
   canvas.style.display='block';
   const ctx=canvas.getContext('2d');
   canvas.width=window.innerWidth;canvas.height=window.innerHeight;
-  const colors=['#F02D7D','#FFD93D','#4FACF5','#FAD3E3','#C9E4FB','#1A1A1A'];
+  const colors=['#F0789F','#F6C76B','#BED2D5','#F2A97E','#A8B48A','#E07A5F'];
   const pieces=[];
-  for(let i=0;i<160;i++){
-    pieces.push({x:Math.random()*canvas.width,y:-20-Math.random()*200,r:Math.random()*8+4,d:Math.random()*80+20,
+  for(let i=0;i<150;i++){
+    pieces.push({x:Math.random()*canvas.width,y:-20-Math.random()*200,r:Math.random()*8+5,d:Math.random()*80+20,
       color:colors[Math.floor(Math.random()*colors.length)],tiltAngle:0,tiltSpeed:Math.random()*0.1+0.05,
-      speed:Math.random()*3+2,shape:Math.random()>0.5?'circle':'rect'});
+      speed:Math.random()*3+2});
   }
   let frame=0;
   (function draw(){
     ctx.clearRect(0,0,canvas.width,canvas.height);
     pieces.forEach(p=>{
-      ctx.beginPath();ctx.fillStyle=p.color;
-      if(p.shape==='circle'){ctx.arc(p.x,p.y,p.r,0,Math.PI*2);}
-      else{ctx.save();ctx.translate(p.x,p.y);ctx.rotate(p.tiltAngle);ctx.fillRect(-p.r,-p.r/2,p.r*2,p.r);ctx.restore();}
-      ctx.fill();
+      ctx.save();ctx.translate(p.x,p.y);ctx.rotate(p.tiltAngle);
+      ctx.fillStyle=p.color;ctx.beginPath();
+      for(let k=0;k<6;k++){const a=Math.PI*2*k/6;ctx.ellipse(Math.cos(a)*p.r*0.6,Math.sin(a)*p.r*0.6,p.r*0.5,p.r*0.5,0,0,Math.PI*2);}
+      ctx.fill();ctx.restore();
       p.y+=p.speed;p.x+=Math.sin(frame/20+p.d)*1.5;p.tiltAngle+=p.tiltSpeed;
     });
     frame++;
@@ -846,8 +868,6 @@ function launchConfetti(){
     else{ctx.clearRect(0,0,canvas.width,canvas.height);canvas.style.display='none';}
   })();
 }
-
-// MENÚ MÓVIL
 (function(){
   const nav=document.getElementById('nav'),btn=document.getElementById('menuBtn');
   btn.addEventListener('click',e=>{e.stopPropagation();const o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o);});
@@ -855,8 +875,6 @@ function launchConfetti(){
   document.addEventListener('click',e=>{if(!nav.contains(e.target)){nav.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
   document.addEventListener('keydown',e=>{if(e.key==='Escape'){nav.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
 })();
-
-// ANIMACIONES AL SCROLL
 const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}}),{threshold:0.08});
 document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
 </script>
